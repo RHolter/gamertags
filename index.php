@@ -13,20 +13,20 @@ require_once("vendor/autoload.php");
 $f3 = Base::instance();
 
 //Define a default route
-$f3->route('GET/ ', function() {
-    //echo "<h1> Home</h1>;
+$f3->route('GET /', function() {
+    //echo "<h1>G@mer T@gs Home</h1>;
     $view = new Template();
     echo $view-> render('views/home.html');
 }
 );
-
-$f3->route('GET/ profile', function() {
-
+$f3->route('GET / profile', function (){
+    //echo "<h1>User Profile Page</h1>"
     $view = new Template();
     echo $view-> render('views/profile.html');
-}
-);
-
+});
 
 //run fat free
 $f3->run();
+
+
+
