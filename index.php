@@ -14,13 +14,15 @@ $f3 = Base::instance();
 
 //Define a default route
 $f3->route('GET /', function() {
-    //echo "<h1>Pets Home</h1>;
-
-
+    //echo "<h1> Home</h1>;
     $view = new Template();
     echo $view-> render('views/home.html');
 }
 );
+$f3->route('GET /order', function() {
+    $view = new Template();
+    echo $view->render('views/profile.html');
+});
 
 //run fat free
 $f3->run();
