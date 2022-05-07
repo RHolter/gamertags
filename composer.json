@@ -1,0 +1,21 @@
+{
+  "name": "rholter.greenriverdev.com/328/pets",
+  "authors": [
+    {
+      "name": "Renee Holter",
+      "email": "holter.renee@student.greenriver.edu"
+    },
+    {
+      "name": "Gurnek Singh",
+      "email": "Singh.gurnek@student.greenriver.edu"
+    },
+
+{
+  "name": "Leonzyo Zyfuentes",
+  "email": "Zyfuentes.leonzyo@student.greenriver.edu"
+}
+],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
