@@ -21,7 +21,7 @@ $f3->route('GET/ ', function() {
 );
 
 $f3->route('GET/ profile', function() {
-    //echo "<h1> Home</h1>;
+
     $view = new Template();
     echo $view-> render('views/profile.html');
 }
