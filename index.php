@@ -19,7 +19,8 @@ $f3->route('GET /', function() {
     echo $view-> render('views/home.html');
 }
 );
-$f3->route('GET / profile', function (){
+
+$f3->route('GET /profile', function (){
     //echo "<h1>User Profile Page</h1>"
     $view = new Template();
     echo $view-> render('views/profile.html');
