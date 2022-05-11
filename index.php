@@ -20,6 +20,7 @@ $f3->route('GET /', function() {
 }
 );
 
+//Route for profile page
 $f3->route('GET /profile', function (){
     //echo "<h1>User Profile Page</h1>"
     $view = new Template();
