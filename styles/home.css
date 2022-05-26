@@ -1,0 +1,31 @@
+.jumbotron {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(58,9,121,1) 55%, rgba(0,212,255,1) 100%);
+}
+
+h1 {
+    color: silver;
+}
+
+#homeText {
+    color: silver;
+}
+
+html {
+    height: 100%;
+}
+
+#homeBtnLabel {
+    color: silver;
+}
+
+body {
+    width: 100%;
+    background: rgb(18,0,36);
+    background: linear-gradient(171deg, rgba(18,0,36,1) 0%, rgba(58,9,121,1) 55%, rgba(201,0,255,1) 100%);
+}
+
+hr {
+    background-color: silver;
+    height: 2px;
+}
