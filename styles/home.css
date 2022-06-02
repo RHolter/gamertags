@@ -21,8 +21,8 @@ html {
 
 body {
     width: 100%;
-    background: rgb(18,0,36);
-    background: linear-gradient(171deg, rgba(18,0,36,1) 0%, rgba(58,9,121,1) 55%, rgba(201,0,255,1) 100%);
+    background: rgb(0,0,0);
+    background: linear-gradient(171deg, rgba(0,0,0,1) 23%, rgba(58,9,121,1) 55%, rgba(201,0,255,1) 100%);
 }
 
 hr {
