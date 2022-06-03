@@ -2,9 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Summary</title>
+    <title>Profile Summary</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="styles/home.css">
 </head>
 <body>
+<!--Navbar-->
+<nav class="navbar navbar-light bg-light">
+    <form class="form-inline">
+        <a href="{{@BASE}}"><button  class="btn btn-outline-success" type="button">Home</button></a>
+        <a href="profile"> <button  class="btn btn-outline-success" type="button">Profile</button></a>
+    </form>
+</nav>
+<div class="row">
+    <div class="col-6">
+        <div class="col-md-12">
+            <table>
+                <tr>
+                    <td class="py-2">Name:{{@SESSION.firstname}} {{@SESSION.lastname}}</td>
+                </tr>
+
+                <tr>
+                    <td class="py-2">Gender: {{@SESSION.username}} </td>
+                </tr>
+
+                <tr>
+                    <td class="py-2">Email: {{@SESSION.email}}</td>
+                </tr>
+
+                <tr>
+                    <td class="py-2">State: {{@SESSION.consoles}}</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
