@@ -27,6 +27,11 @@ $f3->route('GET /profile', function (){
     echo $view-> render('views/profile.html');
 });
 
+$f3->route('GET /console', function (){
+  $view = new Template();
+  echo $view-> render('views/console.html');
+});
+
 //Profile summary route
 $f3->route('GET|POST /summary', function (){
 
