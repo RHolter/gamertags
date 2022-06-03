@@ -23,90 +23,98 @@
 <!--Body-->
 <div class="jumbotron">
     <h1 class="display-4">Create a G@mer Profile!</h1>
-    <p class="lead">Welcome to G@mer T@gs. </p>
+    <p class="lead text-white">Welcome to G@mer T@gs. </p>
     <hr class="my-4">
-    <p>Let's get started! </p>
+    <p class="text-white">Let's get started! </p>
     <p class="lead"></p>
 </div>
 <!--Add in the User info -->
+<!--redefine the form action and such for validation -->
 <form>
+
+    <!--First name-->
+    <div class="form-row text">
+        <div class="col-md-4 mt-3 mb-3">
+            <label for="fName" class="text-white">First Name</label>
+            <input type="text" class="form-control" id="fname" placeholder="First Name">
+
+        </div>
+        <!--Last name-->
+        <div class="col-md-4 mt-3 mb-3">
+            <label for="lname" class="text-white">Last Name</label>
+            <input type="text" class="form-control" id="lname" placeholder="Last Name">
+
+        </div>
+    </div>
 <!--User name-->
     <div class="form-row">
-        <div class="form-group col-md-6 mt-3 mb-3">
-            <label for="userName">User Name</label>
-            <input type="text" class="form-control" id="userName" placeholder="User Name">
-        </div>
-    </div>
-<!--Avatar image-->
-    <div class="input-group mb-1">
-        <div class="input-group-prepend">
-            <span class="input-group-text">Upload an Avatar</span>
-        </div>
-<!--image upload-->
-        <div class="custom-file">
-            <input type="file" class="custom-file-input" id="inputGroupFile01">
-            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-        </div>
-    </div>
-<!--First name-->
-    <div class="form-row">
-        <div class="form-group col-md-4 mt-3 mb-3">
-            <label for="fName">First Name</label>
-            <input type="text" class="form-control" id="fName" placeholder="First Name">
-        </div>
-<!--Last name-->
-        <div class="form-group col-md-4 mt-3 mb-3">
-            <label for="lName">Last Name</label>
-            <input type="text" class="form-control" id="lName" placeholder="Last Name">
-        </div>
-    </div>
-    <!--Email-->
-    <div class="form-row">
-        <div class="form-group col-md-4 mt-3 mb-3">
-            <label for="eMail">Email</label>
-            <input type="eMail" class="form-control" id="eMail" placeholder="Email">
+        <div class="col-md-4 mt-3 mb-3">
+            <label for="uname" class="text-white">User Name</label>
+            <input type="text" class="form-control" id="uname" placeholder="User Name">
 
         </div>
         <!--Password-->
-        <div class="form-group col-md-4 mt-3 mb-3">
-            <label for="passWord">Password</label>
-            <input type="passWord" class="form-control" id="passWord" placeholder="Password">
+        <div class="col-md-4 mt-3 mb-3">
+            <label for="password" class="text-white">Password</label>
+            <input type="text" class="form-control" id="password" placeholder="Password">
+
+        </div>
+    </div>
+
+<!--Avatar image-->
+<!--    <div class="input-group mb-1">-->
+<!--        <div class="input-group-prepend">-->
+<!--            <span class="input-group-text">Upload an Avatar</span>-->
+<!--        </div>-->
+<!--&lt;!&ndash;image upload&ndash;&gt;-->
+<!--        <div class="custom-file">-->
+<!--            <input type="file" class="custom-file-input" id="inputGroupFile01">-->
+<!--            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>-->
+<!--        </div>-->
+<!--    </div>-->
+
+   <!--Email-->
+    <div class="form-row">
+        <div class="col-md-4 mt-3 mb-3">
+            <label for="email" class="text-white">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Email">
+
         </div>
     </div>
     <hr>
     <!--Consoles-->
-    <legend>Consoles</legend>
+    <legend class="text-white">Consoles</legend>
     <div class="form-check form-check-inline">
         <input class="form-check-input" type="checkbox" value="" id="segaSaturn">
-        <label class="form-check-label" for="segaSaturn">Sega Saturn</label>
+        <label class="form-check-label text-white" for="segaSaturn" >Sega Saturn</label>
     </div>
     <div class="form-check form-check-inline">
         <input class="form-check-input" type="checkbox" value="" id="playStation2">
-        <label class="form-check-label" for="playStation2">PlayStation 2 </label>
+        <label class="form-check-label text-white" for="playStation2">PlayStation 2 </label>
     </div>
     <div class="form-check form-check-inline">
         <input class="form-check-input" type="checkbox" value="" id="nintendo64">
-        <label class="form-check-label" for="nintendo64">Nintendo 64 </label>
+        <label class="form-check-label text-white" for="nintendo64">Nintendo 64 </label>
     </div>
     <div class="form-check form-check-inline">
         <input class="form-check-input" type="checkbox" value="" id="amigaCD32">
-        <label class="form-check-label" for="amigaCD32">Amiga CD32 </label>
+        <label class="form-check-label text-white" for="amigaCD32">Amiga CD32 </label>
     </div>
     <div class="form-check form-check-inline">
         <input class="form-check-input" type="checkbox" value="" id="atariJag">
-        <label class="form-check-label" for="atariJag">Atari Jaguar </label>
+        <label class="form-check-label text-white" for="atariJag">Atari Jaguar </label>
     </div>
     <div class="form-check form-check-inline">
         <input class="form-check-input" type="checkbox" value="" id="sega32x">
-        <label class="form-check-label" for="sega32x">Sega 32X </label>
+        <label class="form-check-label text-white" for="sega32x">Sega 32X </label>
     </div>
     <div class="form-check form-check-inline">
         <input class="form-check-input" type="checkbox" value="" id="nec">
-        <label class="form-check-label" for="nec">NEC TurboGrafx-16 </label>
+        <label class="form-check-label text-white" for="nec">NEC TurboGrafx-16 </label>
     </div>
     <div class="form-check form-check-inline">
         <input class="form-check-input" type="checkbox" value="" id="snes">
-        <label class="form-check-label" for="snes">SNES</label>
+        <label class="form-check-label text-white" for="snes">SNES</label>
     </div>
 
     <!--Button-->
