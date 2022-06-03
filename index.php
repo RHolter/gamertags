@@ -27,6 +27,21 @@ $f3->route('GET /profile', function (){
     echo $view-> render('views/profile.html');
 });
 
+//Profile summary route
+$f3->route('GET|POST /summary', function (){
+
+    $_SESSION['firstname'] = $_POST['firstname'];
+    $_SESSION['lastname'] = $_POST['lastname'];
+    $_SESSION['username'] = $_POST['username'];
+    $_SESSION['email'] = $_POST['email'];
+    $_SESSION['console'] = $_POST['consoles'];
+
+    $view = new Template();
+    echo $view->render('views/summary.html');
+
+});
+
+
 //run fat free
 $f3->run();
 
