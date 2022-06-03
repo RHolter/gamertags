@@ -11,10 +11,6 @@ h1 {
     color: silver;
 }
 
-html {
-    height: 100%;
-}
-
 #homeBtnLabel {
     color: silver;
 }
@@ -58,4 +54,38 @@ hr {
     left: -24px;
     margin-top: -13.5px;
 }
+
+.welcomeBubble {
+    position: relative;
+    background: #ffffff;
+    color: #000000;
+    font-family: Arial Black;
+    font-size: 21px;
+    line-height: 40px;
+    box-shadow: 4px 5px 2px 0px #A3A3A3;
+    text-align: center;
+    width: 700px;
+    height: 200px;
+    border-radius: 16px;
+    padding: 0px;
+}
+.welcomeBubble:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-width: 0 24px 27px 0;
+    border-color: transparent #ffffff transparent transparent;
+    top: 73%;
+    left: -24px;
+    margin-top: -13.5px;
+}
+
+.homeMiku {
+    margin-left: -285px;
+    margin-top: -32px;
+}
+
 
