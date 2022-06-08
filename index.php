@@ -51,6 +51,11 @@ $f3->route('GET /segasaturn', function (){
     $view = new Template();
     echo $view-> render('views/segasaturn.html');
 });
+// playstation games
+$f3->route('GET /playstation', function (){
+    $view = new Template();
+    echo $view-> render('views/playstation.html');
+});
 
 
 //run fat free
