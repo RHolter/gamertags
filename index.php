@@ -46,6 +46,12 @@ $f3->route('GET|POST /summary', function (){
 
 });
 
+// sega saturn games
+$f3->route('GET /segasaturn', function (){
+    $view = new Template();
+    echo $view-> render('views/segasaturn.html');
+});
+
 
 //run fat free
 $f3->run();
