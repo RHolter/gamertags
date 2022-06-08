@@ -63,6 +63,11 @@ $f3->route('GET /xbox', function (){
     echo $view-> render('views/xbox.html');
 });
 
+//snes games
+$f3->route('GET /snes', function (){
+    $view = new Template();
+    echo $view-> render('views/snes.html');
+});
 
 //run fat free
 $f3->run();
