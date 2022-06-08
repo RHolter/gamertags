@@ -69,6 +69,12 @@ $f3->route('GET /snes', function (){
     echo $view-> render('views/snes.html');
 });
 
+//playstation2 games
+$f3->route('GET /playstation2', function (){
+    $view = new Template();
+    echo $view-> render('views/playstation2.html');
+});
+
 //run fat free
 $f3->run();
 
