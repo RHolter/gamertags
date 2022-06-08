@@ -5,21 +5,44 @@
     <title>Sega Saturn Games</title>
 </head>
 <body>
+<!--Navbar-->
+<nav class="navbar navbar-light bg-dark">
+    <form class="form-inline">
+        <a href="{{@BASE}}"><button  class="btn btn-outline-success mx-1" type="button">Home</button></a>
+        <a href="profile"> <button  class="btn btn-outline-success mx-1" type="button">Profile</button></a>
+        <a href="console"> <button  class="btn btn-outline-success mx-1" type="button">Consoles</button></a>
+    </form>
+</nav>
+<!--Body-->
+<div class="jumbotron">
+    <h1 class="display-4">Sega Saturn Games!</h1>
+    <p class="lead text-white">Please click on the games to add to your collection </p>
+    <hr class="my-4">
+    <p class="text-white">Let's get started! </p>
+    <p class="lead"></p>
+</div>
+
 <!-- Small sampling of Sega Saturn Games and images -->
     <form action="#" method="get">
-        <div class="row text-center m-5">
-            <div class="row-md-12">
-                <h4>Sega Saturn Games</h4>
+        <div class="row">
+            <div class="col-12 col-sm-10 mx-auto border-top border-bottom pb-4 mb-5">
                 <div class="row">
-                    <div class="col-md-3 item-holder">
-                        <img src="images/3Dlemmings.jpg" alt="3D Lemmings">
+                    <!-- Game selection here? -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
+                        <div class="card shadow rounded-custom border-0">
+                            <img src="/../images/3dlemmings.jpg" class="card-img-top rounded-custom-top" alt="3D Lemmings box art">
+                            <div class="card-body">
+                                <h5 class="card-title">3D Lemmings</h5>
 
+                                <p class="card-text">3D Lemmings is played by using four different, movable cameras to
+                                   fly around and get an overview of the level. While some levels have fixed cameras,
+                                   most of the time they can be freely moved at any time, although without the ability
+                                   to tilt up or down. Another viewing option is the "virtual lemming" (VL) which allows
+                                   the player to see through the eyes of a selected lemming. </p>
+                        </div>
                     </div>
                 </div>
-
-
             </div>
-
         </div>
     </form>
 </body>
