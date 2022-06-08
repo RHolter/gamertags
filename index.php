@@ -28,8 +28,8 @@ $f3->route('GET /profile', function (){
 });
 
 $f3->route('GET /console', function (){
-  $view = new Template();
-  echo $view-> render('views/console.html');
+    $view = new Template();
+    echo $view-> render('views/console.html');
 });
 
 //Profile summary route
@@ -57,9 +57,14 @@ $f3->route('GET /playstation', function (){
     echo $view-> render('views/playstation.html');
 });
 
+//xbox games
+$f3->route('GET /xbox', function (){
+    $view = new Template();
+    echo $view-> render('views/xbox.html');
+});
+
 
 //run fat free
 $f3->run();
-
 
 
