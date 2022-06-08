@@ -28,8 +28,8 @@ $f3->route('GET /profile', function (){
 });
 
 $f3->route('GET /console', function (){
-  $view = new Template();
-  echo $view-> render('views/console.html');
+    $view = new Template();
+    echo $view-> render('views/console.html');
 });
 
 //Profile summary route
@@ -57,9 +57,30 @@ $f3->route('GET /playstation', function (){
     echo $view-> render('views/playstation.html');
 });
 
+//xbox games
+$f3->route('GET /xbox', function (){
+    $view = new Template();
+    echo $view-> render('views/xbox.html');
+});
+
+//snes games
+$f3->route('GET /snes', function (){
+    $view = new Template();
+    echo $view-> render('views/snes.html');
+});
+//nintendo games
+$f3->route('GET /nintendo', function (){
+    $view = new Template();
+    echo $view-> render('views/nintendo.html');
+});
+
+//playstation2 games
+$f3->route('GET /playstation2', function (){
+    $view = new Template();
+    echo $view-> render('views/playstation2.html');
+});
 
 //run fat free
 $f3->run();
-
 
 
