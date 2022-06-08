@@ -68,6 +68,11 @@ $f3->route('GET /snes', function (){
     $view = new Template();
     echo $view-> render('views/snes.html');
 });
+//nintendo games
+$f3->route('GET /nintendo', function (){
+    $view = new Template();
+    echo $view-> render('views/nintendo.html');
+});
 
 //playstation2 games
 $f3->route('GET /playstation2', function (){
