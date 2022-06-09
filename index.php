@@ -79,6 +79,11 @@ $f3->route('GET /playstation2', function (){
     $view = new Template();
     echo $view-> render('views/playstation2.html');
 });
+//dreamcast games
+$f3->route('GET /dreamcast', function (){
+    $view = new Template();
+    echo $view-> render('views/dreamcast.html');
+});
 
 //run fat free
 $f3->run();
