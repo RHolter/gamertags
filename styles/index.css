@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+}
+
+.container-height {
+    height: 100vh;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-1 {
+    background: #aafffa;
+}
+
+.column-2 {
+    background: #fbd456;
+}
+
+.column-3 {
+    background: #84d7ff;
+}
+
+.column-4 {
+    background: #5749a2;
+}
+
+.column-5 {
+    background: #56d198;
+}
+
+.inner-container {
+    background: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+    transition: background-color 0.5s ease-in;
+    flex-direction: column;
+}
+
+#snes:hover {
+    background: #aafffa;
+    cursor: pointer;
+}
+
+#ps:hover {
+    background: #fbd456;
+    cursor: pointer;
+}
+
+#sega:hover {
+    background: #84d7ff;
+    cursor: pointer;
+}
+
+#gba:hover {
+    background: #5749a2;
+    cursor: pointer;
+}
+
+#n64:hover {
+    background: #56d198;
+    cursor: pointer;
+}
+
+.gamer-nav {
+    top: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(6px);
+    background-color: rgba(256, 256, 256, 0.8);
+    box-shadow: 0 3px 2px -2px #fff;
+    z-index: 1000;
+}
+
+.header-text {
+    font-family: 'VT323';
+}
