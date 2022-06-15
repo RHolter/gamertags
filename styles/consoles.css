@@ -1,5 +1,5 @@
 body {
-    background-color: powderblue;
+    background-color: #e2fffd;
 }
 
 .flip-card {
@@ -60,6 +60,7 @@ body {
     align-items: baseline;
     padding: 0 !important;
     margin-right: 5px;
+    box-shadow: -3px 25px 20px 15px cadetblue;
 }
 
 .card-img-top {
@@ -70,4 +71,50 @@ body {
 
 .row {
     max-width: 100%;
+}
+
+.max-height {
+    height: 100vh;
+}
+
+.console-option {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.console-option:last-child {
+    margin-bottom: 0;
+}
+
+#snes {
+    background: #aafffa;
+    cursor: pointer;
+}
+
+#ps {
+    background: #fbd456;
+    cursor: pointer;
+}
+
+#sega {
+    background: #84d7ff;
+    cursor: pointer;
+}
+
+#gba {
+    background: #5749a2;
+    cursor: pointer;
+}
+
+#n64 {
+    background: #56d198;
+    cursor: pointer;
+}
+
+.games {
+    padding: 30px;
 }
