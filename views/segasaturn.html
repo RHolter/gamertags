@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sega Saturn Games</title>
+    <title>SNES Games</title>
 </head>
 <!-- Required meta tags -->
 <meta charset="utf-8">
@@ -10,7 +10,7 @@
 
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" href="styles/home.css">
+<link rel="stylesheet" href="styles/consoles.css">
 
 <body>
 <!--Navbar-->
@@ -42,75 +42,150 @@
 <div class="jumbotron border border-light">
     <h1 class="text-center">G@me Libr@ries</h1>
     <hr>
-    <h3>Sega Saturn Games</h3>
+    <h3>Sega Games</h3>
 </div>
-<div class="container">
-    <div class="row">
+<div class="container m-0 mw-100 container-height">
+    <div class="row h-100">
+        <div class="col-3 column">
+            <div class="row my-3" onclick="location.href='snes'">
+                <div>
+                    <img width="175px" class="mb-4" src="images/main/snes-name.png">
+                </div>
+                <div>
+                    <img width="140px" src="images/main/snes.png">
+                </div>
+            </div>
+            <div class="row my-3" onclick="location.href='playstation'">
+                <div>
+                    <img width="175px" class="mb-4" src="images/main/playstation-name.png">
+                </div>
+                <div>
+                    <img width="140px" src="images/main/playstation.png">
+                </div>
+            </div>
+            <div class="row my-3" onclick="location.href='segasaturn'">
+                <div>
+                    <img width="175px" class="mb-4" src="images/main/sega-name.png">
+                </div>
+                <div>
+                    <img width="140px" src="images/main/sega.png">
+                </div>
+            </div>
+            <div class="row my-3" onclick="location.href='xbox'">
+                <div>
+                    <img width="175px" class="mb-4" src="images/main/xbox-name.png">
+                </div>
+                <div>
+                    <img width="140px" src="images/main/xbox.png">
+                </div>
+            </div>
+        </div>
         <div class="col">
-            <img src="images/3dlemmings.jpg" id="segaSaturn" alt="lemmings game">
-            <p class="text-white">3D Lemmings is played by using four different, movable cameras to
+            <div class="row">
+                <div class="scene">
+                    <div class="flip-card mx-1 mb-1">
+                        <div class="flip-card-inner" onclick="handleflip(this)">
+                            <div class="flip-card-front">
+                                <img src="images/3dlemmings.jpg" id="sega" alt="lemmings game">
+                                <h5 class="card-title">3D Lemmings</h5>
+                            </div>
+                            <div class="flip-card-back">
+                                <label>Description</label>
+                                <textarea disabled class="form-control" style="resize: none" rows="5">3D Lemmings is played by using four different, movable cameras to
                 fly around and get an overview of the level. While some levels have fixed cameras,
                 most of the time they can be freely moved at any time, although without the ability
                 to tilt up or down. Another viewing option is the "virtual lemming" (VL) which allows
-                the player to see through the eyes of a selected lemming. </p>
-            <p class="text-white">Release Date(s): NA Not Released, EU July 1995, Japan August 1996</p>
-        </div>
-        <div class="col">
-            <img src="images/Bug!_cover.jpg"  alt="Bug! Cover art">
-            <p class="text-white">The game centers around Bug, a green bug – and Hollywood actor – who hopes to gain fame
+                the player to see through the eyes of a selected lemming</textarea>
+                                <p class="text-white">Release Date(s): NA Jun 1992, EU Not Released, Japan March 1992</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scene">
+                    <div class="flip-card mx-1">
+                        <div class="flip-card-inner" onclick="handleflip(this)">
+                            <div class="flip-card-front">
+                                <img src="images/Bug!_cover.jpg"  alt="Bug! Cover art">
+                                <h5 class="card-title">Bug!</h5>
+                            </div>
+                            <div class="flip-card-back">
+                                <label>Description</label>
+                                <textarea disabled class="form-control" style="resize: none" rows="5">The game centers around Bug, a green bug – and Hollywood actor – who hopes to gain fame
                 by defeating the villainous Queen Cadavra. The game was developed with the titular character being considered
                 a possible mascot for the Saturn. This was due to the absence of a Sonic the Hedgehog game at the time of
                 the console's launch. Although the Bug! failed to capture consumers' attention, it received positive reviews
                 upon its release. Critics praised its graphics and colorful visual effects, but the game's music and
-                voice acting were criticized. </p>
-            <p class="text-white">Release Date(s): North America August 1995, EU September 1995, Japan December 1995 </p>
-        </div>
-        <div class="col">
-            <img src="images/Doom_cover_art.jpg" id="segaSaturn" alt="Doom">
-            <p class="text-white">Doom is divided into three episodes: "Knee-Deep in the Dead", "The Shores of Hell", and
+                voice acting were criticized.</textarea>
+                                <p class="text-white">Release Date(s): North America April 1992, EU September 1992, Japan November 1991</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scene">
+                    <div class="flip-card mx-1">
+                        <div class="flip-card-inner" onclick="handleflip(this)">
+                            <div class="flip-card-front">
+                                <img src="images/Doom_cover_art.jpg" id="sega" alt="Doom">
+                                <h5 class="card-title">Doom</h5>
+                            </div>
+                            <div class="flip-card-back">
+                                <label>Description</label>
+                                <textarea disabled class="form-control" style="resize: none" rows="5">Doom is divided into three episodes: "Knee-Deep in the Dead", "The Shores of Hell", and
                 "Inferno". A fourth episode, "Thy Flesh Consumed", was added in an expanded version of the game, The Ultimate Doom,
                 released on April 30, 1995, two years after Doom and one year after Doom II. The campaign contains very few plot elements,
-                with the minimal story instead given in the instruction manual and in short text segues between episodes. </p>
-            <p class="text-white">Release Date(s): NA March 1997, EU 1997, Japan July 1997</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <img src="images/FIFA_98_cover.jpg" id="segaSaturn" alt="FIFA 98 cover w/David Beckham">
-            <p class="text-white">The game includes an official soundtrack, team and player customisation options, 16 stadiums,
+                with the minimal story instead given in the instruction manual and in short text segues between episodes.</textarea>
+                                <p class="text-white">Release Date(s): NA August 1991, EU April 1992, Japan November 1990</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scene">
+                    <div class="flip-card mx-1 mt-1">
+                        <div class="flip-card-inner" onclick="handleflip(this)">
+                            <div class="flip-card-front">
+                                <img src="images/FIFA_98_cover.jpg" id="segaSaturn" alt="FIFA 98 cover w/David Beckham">
+                                <h5 class="card-title">FIFA '98</h5>
+                            </div>
+                            <div class="flip-card-back">
+                                <label>Description</label>
+                                <textarea disabled class="form-control" style="resize: none" rows="5">he game includes an official soundtrack, team and player customisation options, 16 stadiums,
                 improved artificial intelligence and the Road to World Cup mode, with all 172 FIFA-registered national teams
                 that took part in the titular tournament's qualification process (including the automatically qualified Brazil and France).
                 No subsequent edition of the FIFA series attempted to replicate FIFA 98's inclusion of every FIFA national team,
-                up until 2010 FIFA World Cup South Africa which included all 199 FIFA nations that took part in qualifying.
-                Players have individual faces. </p>
-            <p class="text-white">Release Date(s): NA December 1997, EU Decemeber 1997, Japan Not Released </p>
-        </div>
-        <div class="col">
-            <img src="images/Heir_of_Zendor.jpg"  alt="Heir of Zendor/Gotha II">
-            <p class="text-white">The planet of Zendor is rich in anti-gravity ore. In the past, pirates grew so strong that
+                up until 2010 FIFA World Cup South Africa which included all 199 FIFA nations that took part in qualifying.</textarea>
+                                <p class="text-white">Release Date(s): NA December 1997, EU Decemeber 1997, Japan Not Released</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scene">
+                    <div class="flip-card mx-1 mt-1">
+                        <div class="flip-card-inner" onclick="handleflip(this)">
+                            <div class="flip-card-front">
+                                <img src="images/Heir_of_Zendor.jpg"  alt="Heir of Zendor/Gotha II">
+                                <h5 class="card-title">Heir of Zendor/ Gotha II</h5>
+                            </div>
+                            <div class="flip-card-back">
+                                <label>Description</label>
+                                <textarea disabled class="form-control" style="resize: none" rows="5">The planet of Zendor is rich in anti-gravity ore. In the past, pirates grew so strong that
                 they formed a faction called The Guild. The Guild and the Alliance of City States fought for control of the skies
                 for years until accidentally awakening giant battleships.
                 One man managed to get past the battleships and their defenses at Terra Sancta,
                 and now controls the last of the major water sources in the world. He allows the water to be controlled and
                 distributed by five of his allies, the "Five Kings".
-                The player takes on the role of a Prince of the Royal Alliance Expeditionary Forces in service to the Five Kings </p>
-            <p class="text-white">Release Date(s): North America December1996, EU Not Released, Japan March 1996 (Gotha II) </p>
-        </div>
-        <div class="col">
-            <img src="images/Magic_Knight_Rayearth_Coverart.png" id="segaSaturn" alt="Magic Knight Rayearth">
-            <p class="text-white">The overall plot is very similar to the first story arc in the manga and anime, with
-                eighth-grade girls Hikaru Shidou, Umi Ryuuzaki and Fuu Hououji finding themselves drawn from their respective
-                field trips to the Tokyo Tower into the world of Cephiro.[1] There, Master Mage Clef inform them that, in order
-                to return to Tokyo, the three girls must become the Magic Knights and rescue Cephiro's current Pillar,
-                Princess Emeraude (named as Princess Emerald in the English version), from her abductor, the high priest
-                and antagonist Zagato. </p>
-            <p class="text-white">Release Date(s): NA November 1998, EU Not Released, Japan August 1995</p>
+                The player takes on the role of a Prince of the Royal Alliance Expeditionary Forces in service to the Five Kings</textarea>
+                                <p class="text-white">Release Date(s):North America December1996, EU Not Released, Japan March 1996</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
 </div>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/console.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
