@@ -27,9 +27,9 @@ $f3->route('GET /profile', function (){
     echo $view-> render('views/profile.html');
 });
 
-$f3->route('GET /console', function (){
+$f3->route('GET /VIP', function (){
     $view = new Template();
-    echo $view-> render('views/console.html');
+    echo $view-> render('views/VIP.html');
 });
 
 //Profile summary route
