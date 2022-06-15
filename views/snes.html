@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SNES Games</title>
+  <title>Nintendo Games</title>
 </head>
 <!-- Required meta tags -->
 <meta charset="utf-8">
@@ -39,29 +39,159 @@
 <div class="container m-0 mw-100 container-height">
   <div class="row max-height">
     <div class="col-3 column">
-      <a id="snes" class="console-option" href="snes">
+      <a id="snes" class="console-option hvr-curl-top-right" href="snes">
         <img width="175px" class="mb-4" src="images/main/nintendo-name.png">
         <img width="140px" src="images/main/snes.png">
       </a>
-      <a id="ps" class="console-option" href="playstation">
+      <a id="ps" class="console-option hvr-curl-top-right" href="playstation">
         <img width="180px" class="mb-4" src="images/main/playstation-name.png">
         <img width="140px" src="images/main/playstation.png">
       </a>
-      <a id="sega" class="console-option" href="segasaturn">
+      <a id="sega" class="console-option hvr-curl-top-right" href="segasaturn">
         <img width="140px" class="mb-4" src="images/main/sega-name.png">
         <img width="140px" src="images/main/sega.png">
       </a>
-      <a id="gba" class="console-option" href="xbox">
+      <a id="gba" class="console-option hvr-curl-top-right" href="xbox">
         <img width="140px" class="mb-4" src="images/main/xbox-name.png">
         <img width="140px" src="images/main/xbox.png">
       </a>
-      <a id="n64" class="console-option" href="nintendo">
+      <a id="n64" class="console-option hvr-curl-top-right" href="handheld">
         <img width="175px" class="mb-4" src="images/main/gameboy-name.png">
         <img width="140px" src="images/main/gameboy.png">
       </a>
     </div>
-    <div class="col">
+    <div class="col-8">
+      <div class="jumbotron">
+        <div>
+          <img width="175px" src="images/main/nintendo-name.png">
+        </div>
+        <div>
+          <img src="images/spacerNintendo.png">
+        </div>
+      </div>
       <div class="row games">
+        <div class="scene">
+          <div class="flip-card mx-1 mb-1">
+            <div class="flip-card-inner" onclick="handleflip(this)">
+              <div class="flip-card-front">
+                <img src="images/DuckHuntBox.jpg" class="card-img-top" alt="Duck Hunt">
+                <h5 class="card-title">Duck Hunt</h5>
+              </div>
+              <div class="flip-card-back">
+                <label>Description</label>
+                <textarea disabled class="form-control" style="resize: none" rows="5">Duck Hunt[a] is a 1984 light gun shooter video game developed and published by Nintendo for the
+                Nintendo Entertainment System (NES) video game console and the Nintendo Vs. System arcade hardware. The game was
+                first released in April 1984, in Japan for the Family Computer (Famicom) console and in North America as an arcade
+                game. It was then released as a launch game for the NES in North America in October 1985, with it also releasing
+                in Europe two years later.</textarea>
+                <p class="text-white">Release Date(s): North America October 1985, EU August, Japan April 1984</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scene">
+          <div class="flip-card mx-1">
+            <div class="flip-card-inner" onclick="handleflip(this)">
+              <div class="flip-card-front">
+                <img src="images/HA_cover.jpg" class="card-img-top" alt="Hogan's Alley">
+                <h5 class="card-title">Hogan's Alley</h5>
+              </div>
+              <div class="flip-card-back">
+                <label>Description</label>
+                <textarea disabled class="form-control" style="resize: none" rows="5">The name of the game was likely taken from an old comic in the 19th Century called The Yellow
+                Kid, a.k.a Hogan's Alley. It was then used by the FBI to describe their training program in Quantico, Virginia,
+                where one test trainees must undergo is walking through a simulated town where paper targets randomly appear.
+                This training course was called a "Hogan's Alley" after the old comic</textarea>
+                <p class="text-white">Release Date(s): North America October 1985, EU December 1987, Japan June 1984</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scene">
+          <div class="flip-card mx-1">
+            <div class="flip-card-inner" onclick="handleflip(this)">
+              <div class="flip-card-front">
+                <img src="images/SMB_box.png" class="card-img-top" alt="Super Mario Brothers">
+                <h5 class="card-title">Super Mario Brothers</h5>
+              </div>
+              <div class="flip-card-back">
+                <label>Description</label>
+                <textarea disabled class="form-control" style="resize: none" rows="5">A successor to the 1983 arcade video game Mario Bros., the game was perhaps as popular as it
+                was due to the increasing fanbase of gamers who immensely enjoyed titles like Donkey Kong and, naturally,
+                Mario Bros. The Nintendo Entertainment System's success in America can arguably be attributed to the video game,
+                and certainly it helped increase the sales of the Famicom in Japan.</textarea>
+                <p class="text-white">Release Date(s): North America July 1987, EU November 1987, Japan February 1994</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scene">
+          <div class="flip-card mx-1 mt-1">
+            <div class="flip-card-inner" onclick="handleflip(this)">
+              <div class="flip-card-front">
+                <img src="images/nes-zeldoflink.jpg" class="card-img-top" alt="Legend of Zelda">
+                <h5 class="card-title">Legend of Zelda</h5>
+              </div>
+              <div class="flip-card-back">
+                <label>Description</label>
+                <textarea disabled class="form-control" style="resize: none" rows="5">The Legend of Zelda games feature a mix of puzzles, action, adventure/battle gameplay, and
+                exploration. These elements have remained constant throughout the series, but with refinements and additions featured
+                in each new game. Later games in the series also include stealth gameplay, where the player must avoid enemies while
+                proceeding through a level, as well as racing elements. Although the games can be beaten with a minimal amount of
+                exploration and side quests, the player is frequently rewarded with helpful items or increased abilities for solving
+                puzzles or exploring hidden areas.</textarea>
+                <p class="text-white">Release Date(s): North America December 1997, EU Decemeber 1997, Japan Not Released</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scene">
+          <div class="flip-card mx-1 mt-1">
+            <div class="flip-card-inner" onclick="handleflip(this)">
+              <div class="flip-card-front">
+                <img src="images/Tetris_NES.jpg" class="card-img-top" alt="Tetris">
+                <h5 class="card-title">Tetris</h5>
+              </div>
+              <div class="flip-card-back">
+                <label>Description</label>
+                <textarea disabled class="form-control" style="resize: none" rows="5">In Tetris, players complete lines by moving differently shaped pieces (tetrominoes), which descend
+                onto the playing field. The completed lines disappear and grant the player points, and the player can proceed to fill
+                the vacated spaces. The game ends when the playing field is filled. The longer the player can delay this outcome,
+                the higher their score will be. In multiplayer games, players must last longer than their opponents; in certain versions,
+                players can inflict penalties on opponents by completing a significant number of lines. Some versions add variations
+                on the rules, such as three-dimensional displays or a system for reserving pieces.</textarea>
+                <p class="text-white">Release Date(s): North America November 1989, EU February 1990, Japan Not Released</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scene">
+          <div class="flip-card mx-1 mt-1">
+            <div class="flip-card-inner" onclick="handleflip(this)">
+              <div class="flip-card-front">
+                <img src="images/FF1_USA_boxart.jpg" class="card-img-top" alt="Final Fantasy">
+                <h5 class="card-title">Final Fantasy</h5>
+              </div>
+              <div class="flip-card-back">
+                <label>Description</label>
+                <textarea disabled class="form-control" style="resize: none" rows="5">Final Fantasy takes place in a fantasy world with three large continents. The elemental powers
+                of this world are determined by the state of four crystals, each governing one of the four classical elements:
+                earth, fire, water, and wind. The world of Final Fantasy is inhabited by numerous races, including humans, elves,
+                dwarves, mermaids, dragons, and robots. Most non-human races have only one "town" in the game, although individuals
+                are sometimes found in human towns or other areas as well</textarea>
+                <p class="text-white">Release Date(s): North America July 1990, EU Not Released, Japan December 1987</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jumbotron">
+          <div>
+            <img width="325px" src="images/main/superNintendo-name.png">
+          </div>
+          <div>
+            <img src="images/spacerNintendo.png">
+          </div>
+        </div>
         <div class="scene">
           <div class="flip-card mx-1 mb-1">
             <div class="flip-card-inner" onclick="handleflip(this)">
@@ -86,7 +216,7 @@
           <div class="flip-card mx-1">
             <div class="flip-card-inner" onclick="handleflip(this)">
               <div class="flip-card-front">
-                <img src="images/loz_cover.jpg" class="card-img-top" alt="Legend of Zelda: A Link to the Past">
+                <img src="images/Legend-of-Zelda.JPG" class="card-img-top" alt="Legend of Zelda: A Link to the Past">
                 <h5 class="card-title">Legend of Zelda: Link to the Past</h5>
               </div>
               <div class="flip-card-back">
@@ -152,11 +282,11 @@
               <div class="flip-card-back">
                 <label>Description</label>
                 <textarea disabled class="form-control" style="resize: none" rows="5">The fictional events of Final Fantasy Mystic Quest take place on a single continent of an unnamed
-        world, which is divided into four distinct regions: Foresta, Aquaria, Fireburg, and Windia. The welfare of each region
-        is determined by the state of one of four shining crystals: earth, water, fire, and wind, respectively. For centuries
-        the Focus Tower had stood at the heart of the world. It had been a center for trade and knowledge, and the world's people
-        met there to peacefully settle their differences. But on one warm summer day, powerful monsters stormed the Tower, stole
-        the four crystals, and took off with the magical coins that kept the Tower's doors unlocked</textarea>
+                world, which is divided into four distinct regions: Foresta, Aquaria, Fireburg, and Windia. The welfare of each region
+                is determined by the state of one of four shining crystals: earth, water, fire, and wind, respectively. For centuries
+                the Focus Tower had stood at the heart of the world. It had been a center for trade and knowledge, and the world's people
+                met there to peacefully settle their differences. But on one warm summer day, powerful monsters stormed the Tower, stole
+                the four crystals, and took off with the magical coins that kept the Tower's doors unlocked</textarea>
                 <p class="text-white">Release Date(s): NA October 1992, EU October 1993, Japan September 1993</p>
               </div>
             </div>

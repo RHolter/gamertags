@@ -2,18 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sega Games</title>
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/consoles.css">
 </head>
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" href="styles/consoles.css">
-
 <body>
-<!--Navbar-->
 <nav class="navbar navbar-light bg-dark">
     <form class="form-inline">
         <a href="{{@BASE}}"><button class="btn btn-outline-success mx-1" type="button">Home</button></a>
@@ -61,29 +55,30 @@
             </a>
         </div>
         <div class="col-8">
-            <div class="jumbotron">
-                <div>
-                    <img width="175px" src="images/main/sega-name.png">
+                <div class="jumbotron">
+                    <div>
+                        <img width="175px" src="images/main/gameboy-name.png">
+                    </div>
+                    <div>
+                        <img src="images/spacerGameboy.png">
+                    </div>
                 </div>
-                <div>
-                    <img src="images/spacerSega.png">
-                </div>
-            </div>
             <div class="row games">
                 <div class="scene">
                     <div class="flip-card mx-1 mb-1">
                         <div class="flip-card-inner" onclick="handleflip(this)">
                             <div class="flip-card-front">
-                                <img src="images/3dlemmings.jpg" class="card-img-top" alt="lemmings game">
-                                <h5 class="card-title">3D Lemmings</h5>
+                                <img src="images/arcana.jpg" class="card-img-top" alt="Arcana box art">
+                                <h5 class="card-title">Arcana</h5>
                             </div>
                             <div class="flip-card-back">
                                 <label>Description</label>
-                                <textarea disabled class="form-control" style="resize: none" rows="5">3D Lemmings is played by using four different, movable cameras to
-                fly around and get an overview of the level. While some levels have fixed cameras,
-                most of the time they can be freely moved at any time, although without the ability
-                to tilt up or down. Another viewing option is the "virtual lemming" (VL) which allows
-                the player to see through the eyes of a selected lemming</textarea>
+                                <textarea disabled class="form-control" style="resize: none" rows="5">Ten years have passed since the civil war. The young protagonist Rooks is the son of the last
+                Card Master to perish during Elemen's civil war, who was also one of the Knights of Lexford. The death of his father
+                  motivated Rooks to begin learning the art of the cards in earnest, but in a decade his minimal training has barely
+                scratched the surface when word comes to his home village of Galia. Mysterious events are occurring all over the
+                land, heralding a cataclysm. Rooks' path lies before him as he sets off to prevent the awakening of Rimsala, so
+                he must fulfill his destiny as the last Card Master before it is too late.</textarea>
                                 <p class="text-white">Release Date(s): NA Jun 1992, EU Not Released, Japan March 1992</p>
                             </div>
                         </div>
@@ -93,17 +88,17 @@
                     <div class="flip-card mx-1">
                         <div class="flip-card-inner" onclick="handleflip(this)">
                             <div class="flip-card-front">
-                                <img src="images/Bug!_cover.jpg" class="card-img-top" alt="Bug! Cover art">
-                                <h5 class="card-title">Bug!</h5>
+                                <img src="images/loz_cover.jpg" class="card-img-top" alt="Legend of Zelda: A Link to the Past">
+                                <h5 class="card-title">Legend of Zelda: Link to the Past</h5>
                             </div>
                             <div class="flip-card-back">
                                 <label>Description</label>
-                                <textarea disabled class="form-control" style="resize: none" rows="5">The game centers around Bug, a green bug – and Hollywood actor – who hopes to gain fame
-                by defeating the villainous Queen Cadavra. The game was developed with the titular character being considered
-                a possible mascot for the Saturn. This was due to the absence of a Sonic the Hedgehog game at the time of
-                the console's launch. Although the Bug! failed to capture consumers' attention, it received positive reviews
-                upon its release. Critics praised its graphics and colorful visual effects, but the game's music and
-                voice acting were criticized.</textarea>
+                                <textarea disabled class="form-control" style="resize: none" rows="5">Players assume the role of series protagonist Link, a young man living with his uncle south
+                of Hyrule Castle. Princess Zelda, a descendant of the Seven Sages, is held captive in the castle dungeon by Agahnim,
+                a treacherous wizard who has set forth a chain of events to release his dark master. Sahasrahla, a descendant of
+                those who forged the Master Sword, mentors Link on his quest.[5][10] Series antagonist Ganon remains sealed in the
+                Dark World, the former Sacred Realm corrupted by his evil magic. It is revealed late in the game that Agahnim is an
+                avatar of Ganon, used by the King of Evil to infiltrate the Light World.</textarea>
                                 <p class="text-white">Release Date(s): North America April 1992, EU September 1992, Japan November 1991</p>
                             </div>
                         </div>
@@ -113,15 +108,17 @@
                     <div class="flip-card mx-1">
                         <div class="flip-card-inner" onclick="handleflip(this)">
                             <div class="flip-card-front">
-                                <img src="images/Doom_cover_art.jpg" class="card-img-top" alt="Doom">
-                                <h5 class="card-title">Doom</h5>
+                                <img src="images/SMW_Coverart.png" class="card-img-top" alt="Super Mario on Yoshi">
+                                <h5 class="card-title">Super Mario World</h5>
                             </div>
                             <div class="flip-card-back">
                                 <label>Description</label>
-                                <textarea disabled class="form-control" style="resize: none" rows="5">Doom is divided into three episodes: "Knee-Deep in the Dead", "The Shores of Hell", and
-                "Inferno". A fourth episode, "Thy Flesh Consumed", was added in an expanded version of the game, The Ultimate Doom,
-                released on April 30, 1995, two years after Doom and one year after Doom II. The campaign contains very few plot elements,
-                with the minimal story instead given in the instruction manual and in short text segues between episodes.</textarea>
+                                <textarea disabled class="form-control" style="resize: none" rows="5">After bringing peace to the Mushroom World in Super Mario Bros. 3, the brothers Mario and Luigi
+                decide to go on vacation with Princess Toadstool to a place called Dinosaur Land, a prehistoric-themed world swarming
+                with dinosaurs and other enemies. While resting on the beach, Princess Toadstool is captured by Bowser. When Mario
+                and Luigi wake up, they try to find her and, after hours of searching, come across a giant egg in the forest. It
+                suddenly hatches and out of it comes a young dinosaur named Yoshi, who tells them his dinosaur friends have also
+                been imprisoned in eggs by evil Koopalings</textarea>
                                 <p class="text-white">Release Date(s): NA August 1991, EU April 1992, Japan November 1990</p>
                             </div>
                         </div>
@@ -131,17 +128,18 @@
                     <div class="flip-card mx-1 mt-1">
                         <div class="flip-card-inner" onclick="handleflip(this)">
                             <div class="flip-card-front">
-                                <img src="images/FIFA_98_cover.jpg" class="card-img-top" alt="FIFA 98 cover w/David Beckham">
-                                <h5 class="card-title">FIFA '98</h5>
+                                <img src="images/Soul_Blazer.jpg" class="card-img-top" alt="Soul Blazer">
+                                <h5 class="card-title">Soul Blazer</h5>
                             </div>
                             <div class="flip-card-back">
                                 <label>Description</label>
-                                <textarea disabled class="form-control" style="resize: none" rows="5">he game includes an official soundtrack, team and player customisation options, 16 stadiums,
-                improved artificial intelligence and the Road to World Cup mode, with all 172 FIFA-registered national teams
-                that took part in the titular tournament's qualification process (including the automatically qualified Brazil and France).
-                No subsequent edition of the FIFA series attempted to replicate FIFA 98's inclusion of every FIFA national team,
-                up until 2010 FIFA World Cup South Africa which included all 199 FIFA nations that took part in qualifying.</textarea>
-                                <p class="text-white">Release Date(s): NA December 1997, EU Decemeber 1997, Japan Not Released</p>
+                                <textarea disabled class="form-control" style="resize: none" rows="5">The player frees a series of towns by fighting monsters in traditional dungeon crawl battles.
+                Destroying monster lairs in the dungeons causes a soul belonging to a former town occupant to be liberated and reincarnated.
+                This is often a human, but it could be anything from a dolphin to a talking tulip. As souls are freed, the town is
+                reconstructed around the people. The new town occupants give the player advice and items. When the player defeats the boss
+                monster imprisoning the soul of the head of each town, the area is cleared and the player can continue. After the hero frees
+                the first six villages, he is granted access to the "World of Evil", where the final villain awaits.</textarea>
+                                <p class="text-white">Release Date(s): NA November 1992, EU January 1994, Japan January 1992</p>
                             </div>
                         </div>
                     </div>
@@ -150,19 +148,18 @@
                     <div class="flip-card mx-1 mt-1">
                         <div class="flip-card-inner" onclick="handleflip(this)">
                             <div class="flip-card-front">
-                                <img src="images/Heir_of_Zendor.jpg" class="card-img-top" alt="Heir of Zendor/Gotha II">
-                                <h5 class="card-title">Heir of Zendor/ Gotha II</h5>
+                                <img src="images/FF_MysticQuest.jpg" class="card-img-top" alt="Soul Blazer">
+                                <h5 class="card-title">Final Fantasy: Mystic Quest</h5>
                             </div>
                             <div class="flip-card-back">
                                 <label>Description</label>
-                                <textarea disabled class="form-control" style="resize: none" rows="5">The planet of Zendor is rich in anti-gravity ore. In the past, pirates grew so strong that
-                they formed a faction called The Guild. The Guild and the Alliance of City States fought for control of the skies
-                for years until accidentally awakening giant battleships.
-                One man managed to get past the battleships and their defenses at Terra Sancta,
-                and now controls the last of the major water sources in the world. He allows the water to be controlled and
-                distributed by five of his allies, the "Five Kings".
-                The player takes on the role of a Prince of the Royal Alliance Expeditionary Forces in service to the Five Kings</textarea>
-                                <p class="text-white">Release Date(s):North America December1996, EU Not Released, Japan March 1996</p>
+                                <textarea disabled class="form-control" style="resize: none" rows="5">The fictional events of Final Fantasy Mystic Quest take place on a single continent of an unnamed
+        world, which is divided into four distinct regions: Foresta, Aquaria, Fireburg, and Windia. The welfare of each region
+        is determined by the state of one of four shining crystals: earth, water, fire, and wind, respectively. For centuries
+        the Focus Tower had stood at the heart of the world. It had been a center for trade and knowledge, and the world's people
+        met there to peacefully settle their differences. But on one warm summer day, powerful monsters stormed the Tower, stole
+        the four crystals, and took off with the magical coins that kept the Tower's doors unlocked</textarea>
+                                <p class="text-white">Release Date(s): NA October 1992, EU October 1993, Japan September 1993</p>
                             </div>
                         </div>
                     </div>

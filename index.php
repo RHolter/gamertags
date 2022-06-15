@@ -69,9 +69,9 @@ $f3->route('GET /snes', function (){
     echo $view-> render('views/snes.html');
 });
 //nintendo games
-$f3->route('GET /nintendo', function (){
+$f3->route('GET /handheld', function (){
     $view = new Template();
-    echo $view-> render('views/nintendo.html');
+    echo $view-> render('views/handheld.html');
 });
 
 //playstation2 games
