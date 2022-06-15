@@ -53,13 +53,13 @@
     <div class="form-row text">
         <div class="col-md-4 mt-3 mb-3">
             <label for="fName" class="text-white">First Name</label>
-            <input type="text" class="form-control" id="fname" placeholder="First Name">
+            <input type="text" class="form-control" id="fname" name="firstname" placeholder="First Name">
 
         </div>
         <!--Last name-->
         <div class="col-md-4 mt-3 mb-3">
             <label for="lname" class="text-white">Last Name</label>
-            <input type="text" class="form-control" id="lname" placeholder="Last Name">
+            <input type="text" class="form-control" id="lname" name="lastname" placeholder="Last Name">
 
         </div>
     </div>
@@ -67,13 +67,13 @@
     <div class="form-row">
         <div class="col-md-4 mt-3 mb-3">
             <label for="uname" class="text-white">User Name</label>
-            <input type="text" class="form-control" id="uname" placeholder="User Name">
+            <input type="text" class="form-control" id="uname" name="username" placeholder="User Name">
 
         </div>
         <!--Password-->
         <div class="col-md-4 mt-3 mb-3">
             <label for="password" class="text-white">Password</label>
-            <input type="text" class="form-control" id="password" placeholder="Password">
+            <input type="text" class="form-control" id="password" name="password" placeholder="Password">
 
         </div>
     </div>
@@ -82,7 +82,7 @@
     <div class="form-row">
         <div class="col-md-4 mt-3 mb-3">
             <label for="email" class="text-white">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Email">
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
 
         </div>
     </div>
@@ -90,35 +90,35 @@
     <!--Consoles-->
     <legend class="text-white">Consoles</legend>
     <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" value="" id="segaSaturn">
+        <input class="form-check-input" type="checkbox" value="sega saturn" name="console[]" id="segaSaturn">
         <label class="form-check-label text-white" for="segaSaturn" >Sega Saturn</label>
     </div>
     <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" value="" id="playStation2">
+        <input class="form-check-input" type="checkbox" value="playstation 2" name="console[]" id="playStation2">
         <label class="form-check-label text-white" for="playStation2">PlayStation 2 </label>
     </div>
     <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" value="" id="nintendo64">
+        <input class="form-check-input" type="checkbox" value="nintendo 64" name="console[]" id="nintendo64">
         <label class="form-check-label text-white" for="nintendo64">Nintendo 64 </label>
     </div>
     <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" value="" id="amigaCD32">
+        <input class="form-check-input" type="checkbox" value="amiga cd32" name="console[]" id="amigaCD32">
         <label class="form-check-label text-white" for="amigaCD32">Amiga CD32 </label>
     </div>
     <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" value="" id="atariJag">
+        <input class="form-check-input" type="checkbox" value="atari jaguar" name="console[]" id="atariJag">
         <label class="form-check-label text-white" for="atariJag">Atari Jaguar </label>
     </div>
     <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" value="" id="sega32x">
+        <input class="form-check-input" type="checkbox" value="sega 32x" name="console[]" id="sega32x">
         <label class="form-check-label text-white" for="sega32x">Sega 32X </label>
     </div>
     <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" value="" id="nec">
+        <input class="form-check-input" type="checkbox" value="turbografx-16" name="console[]" id="nec">
         <label class="form-check-label text-white" for="nec">NEC TurboGrafx-16 </label>
     </div>
     <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" value="" id="snes">
+        <input class="form-check-input" type="checkbox" value="snes" name="console[]" id="snes">
         <label class="form-check-label text-white" for="snes">SNES</label>
     </div>
 
@@ -128,7 +128,7 @@
     <!--VIP account button-->
     <div>
         <label class="form-check-label text-white" for="membership">
-            <input value="premiumMember" id="membership" type="checkbox" name="membership">Sign me up for a VIP account!</input>
+            <input value="premiumMember" id="membership" type="checkbox" name="vip">Sign me up for a VIP account!</input>
         </label>
     </div>
 </form>
