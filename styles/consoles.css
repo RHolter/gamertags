@@ -64,7 +64,8 @@ body {
 }
 
 .card-img-top {
-    max-width: 100%;
+    max-width: 90%;
+    max-height: 80%;
     border-radius: 5px;
     box-shadow: 0 6px 10px 0 rgba(0,0,0,0.6);
 }
