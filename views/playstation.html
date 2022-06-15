@@ -36,52 +36,32 @@
         </div>
     </form>
 </nav>
-
-<!--Body-->
-<!--Banner, Description-->
-<div class="jumbotron border border-light">
-    <h1 class="text-center">G@me Libr@ries</h1>
-    <hr>
-    <h3>Play Station Games</h3>
-</div>
 <div class="container m-0 mw-100 container-height">
-    <div class="row h-100">
+    <div class="row max-height">
         <div class="col-3 column">
-            <div class="row my-3" onclick="location.href='snes'">
-                <div>
-                    <img width="175px" class="mb-4" src="images/main/snes-name.png">
-                </div>
-                <div>
-                    <img width="140px" src="images/main/snes.png">
-                </div>
-            </div>
-            <div class="row my-3" onclick="location.href='playstation'">
-                <div>
-                    <img width="175px" class="mb-4" src="images/main/playstation-name.png">
-                </div>
-                <div>
-                    <img width="140px" src="images/main/playstation.png">
-                </div>
-            </div>
-            <div class="row my-3" onclick="location.href='segasaturn'">
-                <div>
-                    <img width="175px" class="mb-4" src="images/main/sega-name.png">
-                </div>
-                <div>
-                    <img width="140px" src="images/main/sega.png">
-                </div>
-            </div>
-            <div class="row my-3" onclick="location.href='xbox'">
-                <div>
-                    <img width="175px" class="mb-4" src="images/main/xbox-name.png">
-                </div>
-                <div>
-                    <img width="140px" src="images/main/xbox.png">
-                </div>
-            </div>
+            <a id="snes" class="console-option" href="snes">
+                <img width="175px" class="mb-4" src="images/main/snes-name.png">
+                <img width="140px" src="images/main/snes.png">
+            </a>
+            <a id="ps" class="console-option" href="playstation">
+                <img width="175px" class="mb-4" src="images/main/playstation-name.png">
+                <img width="140px" src="images/main/playstation.png">
+            </a>
+            <a id="sega" class="console-option" href="segasaturn">
+                <img width="175px" class="mb-4" src="images/main/sega-name.png">
+                <img width="140px" src="images/main/sega.png">
+            </a>
+            <a id="gba" class="console-option" href="xbox">
+                <img width="175px" class="mb-4" src="images/main/xbox-name.png">
+                <img width="140px" src="images/main/xbox.png">
+            </a>
+            <a id="n64" class="console-option" href="nintendo">
+                <img width="175px" class="mb-4" src="images/main/n64-name.png">
+                <img width="140px" src="images/main/n64.png">
+            </a>
         </div>
         <div class="col">
-            <div class="row">
+            <div class="row games">
                 <div class="scene">
                     <div class="flip-card mx-1 mb-1">
                         <div class="flip-card-inner" onclick="handleflip(this)">
@@ -92,9 +72,9 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">In Blood Omen, the player follows Kain, a slain nobleman newly resurrected as a vampire.
-                Seeking revenge against his murderers and a cure to his vampiric curse, Kain is tasked with traversing the
-                fictional land of Nosgoth and slaughtering the Circle of Nine, a corrupt oligarchy of godlike sorcerers, but
-                slowly begins to forsake humanity and view his transformation as a blessing. </textarea>
+                                Seeking revenge against his murderers and a cure to his vampiric curse, Kain is tasked with traversing the
+                                fictional land of Nosgoth and slaughtering the Circle of Nine, a corrupt oligarchy of godlike sorcerers, but
+                                slowly begins to forsake humanity and view his transformation as a blessing. </textarea>
                                 <p class="text-white">Release Date(s): NA May 1998, EU Not Released, Japan Not Released</p>
                             </div>
                         </div>
@@ -110,9 +90,9 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">The game begins as a wanderer named Bartz investigates a fallen meteor. There, he encounters
-                several characters, one of whom reveals the danger facing the four Crystals that control the world's elements.
-                These Crystals act as a seal on Exdeath, an evil sorcerer. Bartz and his party must keep the Crystals from being
-                exploited by Exdeath's influence and prevent his resurgence </textarea>
+                                several characters, one of whom reveals the danger facing the four Crystals that control the world's elements.
+                                These Crystals act as a seal on Exdeath, an evil sorcerer. Bartz and his party must keep the Crystals from being
+                                exploited by Exdeath's influence and prevent his resurgence </textarea>
                                 <p class="text-white">Release Date(s): North America August 1995, EU September 1995, Japan December 1995 </p>
                             </div>
                         </div>
@@ -128,12 +108,12 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">The story takes place after Ivalice ended its war with the two nations in what is known
-                as the Fifty Years War, and is facing economic problems and political strife. The king of Ivalice has recently
-                died and his heir is an infant, so a regent is needed to rule in place of the prince. The kingdom is split
-                between two candidates named Prince Goltana, represented by the Black Lion, and Prince Larg, symbolized by
-                the White Lion. The conflict leads to what is known in the game as the Lion War. Behind this backdrop is
-                a revelation by the game's historian Alazlam J. Durai, who seeks to reveal the story of an unknown character
-                whose role in the Lion War was major but was covered up by the kingdom's church </textarea>
+                                as the Fifty Years War, and is facing economic problems and political strife. The king of Ivalice has recently
+                                died and his heir is an infant, so a regent is needed to rule in place of the prince. The kingdom is split
+                                between two candidates named Prince Goltana, represented by the Black Lion, and Prince Larg, symbolized by
+                                the White Lion. The conflict leads to what is known in the game as the Lion War. Behind this backdrop is
+                                a revelation by the game's historian Alazlam J. Durai, who seeks to reveal the story of an unknown character
+                                whose role in the Lion War was major but was covered up by the kingdom's church </textarea>
                                 <p class="text-white">Release Date(s): NA June 1997, EU Not Released, Japan January 1998</p>
                             </div>
                         </div>
@@ -149,8 +129,8 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">The plot follows the members of Public Security Section 9, mainly consisting of Major Motoko
-                Kusanagi, Chief Aramaki, Batou, Togusa, Ishikawa, Saito, and a nameless male, the Rookie, controlled by the
-                player. The game's story is told using mission briefings and animated cutscenes.</textarea>
+                                Kusanagi, Chief Aramaki, Batou, Togusa, Ishikawa, Saito, and a nameless male, the Rookie, controlled by the
+                                player. The game's story is told using mission briefings and animated cutscenes.</textarea>
                                 <p class="text-white">Release Date(s): NA October 1997, EU July 1998, Japan July 1998</p>
                             </div>
                         </div>
@@ -166,9 +146,9 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">Gran Turismo is a racing game. The player must maneuver a car to compete against artificially
-                intelligent drivers on various race tracks. The game uses two different modes: Arcade Mode and Simulation
-                Mode (Gran Turismo Mode in PAL and Japanese versions). In the arcade mode, the player can freely choose
-                the courses and vehicles they wish to use. Winning races unlocks additional cars and courses.</textarea>
+                                intelligent drivers on various race tracks. The game uses two different modes: Arcade Mode and Simulation
+                                Mode (Gran Turismo Mode in PAL and Japanese versions). In the arcade mode, the player can freely choose
+                                the courses and vehicles they wish to use. Winning races unlocks additional cars and courses.</textarea>
                                 <p class="text-white">Release Date(s): North America , EU , Japan</p>
                             </div>
                         </div>

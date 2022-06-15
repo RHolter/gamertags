@@ -36,57 +36,37 @@
         </div>
     </form>
 </nav>
-
-<!--Body-->
-<!--Banner, Description-->
-<div class="jumbotron border border-light">
-    <h1 class="text-center">G@me Libr@ries</h1>
-    <hr>
-    <h3>Sega Games</h3>
-</div>
 <div class="container m-0 mw-100 container-height">
-    <div class="row h-100">
+    <div class="row max-height">
         <div class="col-3 column">
-            <div class="row my-3" onclick="location.href='snes'">
-                <div>
-                    <img width="175px" class="mb-4" src="images/main/snes-name.png">
-                </div>
-                <div>
-                    <img width="140px" src="images/main/snes.png">
-                </div>
-            </div>
-            <div class="row my-3" onclick="location.href='playstation'">
-                <div>
-                    <img width="175px" class="mb-4" src="images/main/playstation-name.png">
-                </div>
-                <div>
-                    <img width="140px" src="images/main/playstation.png">
-                </div>
-            </div>
-            <div class="row my-3" onclick="location.href='segasaturn'">
-                <div>
-                    <img width="175px" class="mb-4" src="images/main/sega-name.png">
-                </div>
-                <div>
-                    <img width="140px" src="images/main/sega.png">
-                </div>
-            </div>
-            <div class="row my-3" onclick="location.href='xbox'">
-                <div>
-                    <img width="175px" class="mb-4" src="images/main/xbox-name.png">
-                </div>
-                <div>
-                    <img width="140px" src="images/main/xbox.png">
-                </div>
-            </div>
+            <a id="snes" class="console-option" href="snes">
+                <img width="175px" class="mb-4" src="images/main/snes-name.png">
+                <img width="140px" src="images/main/snes.png">
+            </a>
+            <a id="ps" class="console-option" href="playstation">
+                <img width="175px" class="mb-4" src="images/main/playstation-name.png">
+                <img width="140px" src="images/main/playstation.png">
+            </a>
+            <a id="sega" class="console-option" href="segasaturn">
+                <img width="175px" class="mb-4" src="images/main/sega-name.png">
+                <img width="140px" src="images/main/sega.png">
+            </a>
+            <a id="gba" class="console-option" href="xbox">
+                <img width="175px" class="mb-4" src="images/main/xbox-name.png">
+                <img width="140px" src="images/main/xbox.png">
+            </a>
+            <a id="n64" class="console-option" href="nintendo">
+                <img width="175px" class="mb-4" src="images/main/xbox-name.png">
+                <img width="140px" src="images/main/xbox.png">
+            </a>
         </div>
         <div class="col">
-            <div class="row">
+            <div class="row games">
                 <div class="scene">
                     <div class="flip-card mx-1 mb-1">
                         <div class="flip-card-inner" onclick="handleflip(this)">
                             <div class="flip-card-front">
-                                <img src="images/3dlemmings.jpg" class="card-img-top" id="sega" alt="lemmings game">
+                                <img src="images/3dlemmings.jpg" class="card-img-top" alt="lemmings game">
                                 <h5 class="card-title">3D Lemmings</h5>
                             </div>
                             <div class="flip-card-back">
@@ -125,7 +105,7 @@
                     <div class="flip-card mx-1">
                         <div class="flip-card-inner" onclick="handleflip(this)">
                             <div class="flip-card-front">
-                                <img src="images/Doom_cover_art.jpg" class="card-img-top" id="sega" alt="Doom">
+                                <img src="images/Doom_cover_art.jpg" class="card-img-top" alt="Doom">
                                 <h5 class="card-title">Doom</h5>
                             </div>
                             <div class="flip-card-back">
@@ -143,7 +123,7 @@
                     <div class="flip-card mx-1 mt-1">
                         <div class="flip-card-inner" onclick="handleflip(this)">
                             <div class="flip-card-front">
-                                <img src="images/FIFA_98_cover.jpg" class="card-img-top" id="segaSaturn" alt="FIFA 98 cover w/David Beckham">
+                                <img src="images/FIFA_98_cover.jpg" class="card-img-top" alt="FIFA 98 cover w/David Beckham">
                                 <h5 class="card-title">FIFA '98</h5>
                             </div>
                             <div class="flip-card-back">
