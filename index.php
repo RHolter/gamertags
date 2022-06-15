@@ -7,43 +7,38 @@ error_reporting(E_ALL);
 //require the autoload file
 require_once("vendor/autoload.php");
 
-//create an instance of the base class
-// :: invokes a static method
+//Start session
+session_start();
 
+//create an instance of the base class
 $f3 = Base::instance();
+
+//Create an instance of the controller class
+$con = new Controller($f3);
 
 //Define a default route
 $f3->route('GET /', function() {
-    //echo "<h1>G@mer T@gs Home</h1>;
-    $view = new Template();
-    echo $view-> render('views/home.html');
+
+  $GLOBALS['con']->home();
 }
 );
 
 //Route for profile page
-$f3->route('GET /profile', function (){
-    //echo "<h1>User Profile Page</h1>"
-    $view = new Template();
-    echo $view-> render('views/profile.html');
+$f3->route('GET|POST /profile', function () use ($f3) {
+  $GLOBALS['con']->profile();
 });
 
-$f3->route('GET /VIP', function (){
-    $view = new Template();
-    echo $view-> render('views/VIP.html');
+$f3->route('GET|POST /VIP', function () use ($f3) {
+  $GLOBALS['con']->VIP();
 });
 
 //Profile summary route
-$f3->route('GET|POST /summary', function (){
+$f3->route('GET|POST /summary', function () use ($f3) {
+  $GLOBALS['con']->summary();
+});
 
-    $_SESSION['firstname'] = $_POST['firstname'];
-    $_SESSION['lastname'] = $_POST['lastname'];
-    $_SESSION['username'] = $_POST['username'];
-    $_SESSION['email'] = $_POST['email'];
-    $_SESSION['console'] = $_POST['consoles'];
-
-    $view = new Template();
-    echo $view->render('views/summary.html');
-
+$f3->route('GET|POST /upload', function () {
+  $GLOBALS['con']->Upload();
 });
 
 // sega saturn games
@@ -72,22 +67,6 @@ $f3->route('GET /snes', function (){
 $f3->route('GET /handheld', function (){
     $view = new Template();
     echo $view-> render('views/handheld.html');
-});
-
-//playstation2 games
-$f3->route('GET /playstation2', function (){
-    $view = new Template();
-    echo $view-> render('views/playstation2.html');
-});
-//dreamcast games
-$f3->route('GET /dreamcast', function (){
-    $view = new Template();
-    echo $view-> render('views/dreamcast.html');
-});
-//about us
-$f3->route('GET /about', function (){
-    $view = new Template();
-    echo $view-> render('views/about.html');
 });
 
 //run fat free

@@ -37,19 +37,25 @@
         <div class="col-md-12">
             <table>
                 <tr>
-                    <td class="py-2">Name:{{@SESSION.firstname}} {{@SESSION.lastname}}</td>
+                    <td class="py-2">Name:{{@SESSION.member->getFirstname()}} {{@SESSION.member->getLastname()}}</td>
                 </tr>
 
                 <tr>
-                    <td class="py-2">Gender: {{@SESSION.username}} </td>
+                    <td class="py-2">Username: {{@SESSION.member->getUsername()}} </td>
                 </tr>
 
                 <tr>
-                    <td class="py-2">Email: {{@SESSION.email}}</td>
+                    <td class="py-2">Email: {{@SESSION.member->getEmail()}}</td>
                 </tr>
 
                 <tr>
-                    <td class="py-2">State: {{@SESSION.consoles}}</td>
+                    <td class="py-2">Consoles: {{@SESSION.member->getConsole()}}</td>
+                </tr>
+                <tr>
+                    <td class="py-2">Consoles: {{@SESSION.member->getAge()}}</td>
+                </tr>
+                <tr>
+                    <td class="py-2">Consoles: {{@SESSION.member->getGamertags()}}</td>
                 </tr>
 
             </table>
