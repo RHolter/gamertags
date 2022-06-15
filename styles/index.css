@@ -10,6 +10,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 !important;
+    margin-right: 5px;
+}
+
+.column:last-child {
+    margin-right: 0;
 }
 
 .column-1 {
