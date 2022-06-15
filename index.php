@@ -84,6 +84,11 @@ $f3->route('GET /dreamcast', function (){
     $view = new Template();
     echo $view-> render('views/dreamcast.html');
 });
+//about us
+$f3->route('GET /about', function (){
+    $view = new Template();
+    echo $view-> render('views/about.html');
+});
 
 //run fat free
 $f3->run();
