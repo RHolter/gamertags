@@ -14,8 +14,8 @@ class member {
 
     $this->_firstname = $firstname;
     $this->_lastname = $lastname;
-    $this->_age = $age;
     $this->_username = $username;
+    $this->_age = $age;
     $this->_email = $email;
     $this->_console = $console;
     $this->_password = $password;

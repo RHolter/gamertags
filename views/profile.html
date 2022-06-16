@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/form.css">
 
     <title>User Profile</title>
 </head>
@@ -47,48 +47,60 @@
 </div>
 <!--Add in the User info -->
 <!--redefine the form action and such for validation -->
-<form>
+<form action="profile" method="POST">
 
     <!--First name-->
     <div class="form-row text">
         <div class="col-md-4 mt-3 mb-3">
-            <label for="fName" class="text-white">First Name</label>
-            <input type="text" class="form-control" id="fname" name="firstname" value="{{ @firstname }}" placeholder="First Name">
-
+            <label for="firstname" class="">First Name</label>
+            <input type="text" class="form-control" id="firstname" name="firstname" value="{{ @firstname }}" placeholder="First Name">
+            <check if="{{ isset(@errors['firstname']) }}">
+                <span class="err">{{ @errors['firstname'] }}</span>
+            </check>
         </div>
         <!--Last name-->
         <div class="col-md-4 mt-3 mb-3">
-            <label for="lname" class="text-white">Last Name</label>
-            <input type="text" class="form-control" id="lname" name="lastname" value="{{ @lastname }}" placeholder="Last Name">
-
+            <label for="lastname" class="">Last Name</label>
+            <input type="text" class="form-control" id="lastname" name="lastname" value="{{ @lastname }}" placeholder="Last Name">
+            <check if="{{ isset(@errors['lastname']) }}">
+                <span class="err">{{ @errors['lastname'] }}</span>
+            </check>
         </div>
     </div>
     <!--User name-->
     <div class="form-row">
         <div class="col-md-4 mt-3 mb-3">
-            <label for="uname" class="text-white">User Name</label>
-            <input type="text" class="form-control" id="uname" name="username" value="{{ @username }}" placeholder="User Name">
-
+            <label for="username" class="">User Name</label>
+            <input type="text" class="form-control" id="username" name="username" value="{{ @username }}" placeholder="User Name">
+            <check if="{{ isset(@errors['username']) }}">
+                <span class="err">{{ @errors['username'] }}</span>
+            </check>
         </div>
         <!--Password-->
         <div class="col-md-4 mt-3 mb-3">
-            <label for="password" class="text-white">Password</label>
+            <label for="password" class="">Password</label>
             <input type="text" class="form-control" id="password" name="password" value="{{ @password }}" placeholder="Password">
-
+            <check if="{{ isset(@errors['password']) }}">
+                <span class="err">{{ @errors['password'] }}</span>
+            </check>
         </div>
     </div>
 
     <!--Email-->
     <div class="form-row">
         <div class="col-md-4 mt-3 mb-3">
-            <label for="email" class="text-white">Email</label>
+            <label for="email" class="">Email</label>
             <input type="email" class="form-control" id="email" name="email" value="{{ @email }}" placeholder="Email">
-
+            <check if="{{ isset(@errors['email']) }}">
+                <span class="err">{{ @errors['email'] }}</span>
+            </check>
         </div>
         <div class="col-md-4 mt-3 mb-3">
-            <label for="age" class="text-white">Age</label>
+            <label for="age" class="">Age</label>
             <input type="text" class="form-control" id="age" name="age" value="{{ @age }}" placeholder="Age">
-
+            <check if="{{ isset(@errors['age']) }}">
+                <span class="err">{{ @errors['age'] }}</span>
+            </check>
         </div>
     </div>
     <hr>
@@ -96,36 +108,39 @@
     <legend class="text-white">Consoles</legend>
     <div class="form-check form-check-inline">
         <input class="form-check-input" type="checkbox" value="sega saturn" name="console[]" id="segaSaturn">
-        <label class="form-check-label text-white" for="segaSaturn" >Sega Saturn</label>
+        <label class="form-check-label" for="segaSaturn" >Sega Saturn</label>
     </div>
     <div class="form-check form-check-inline">
         <input class="form-check-input" type="checkbox" value="playstation 2" name="console[]" id="playStation2">
-        <label class="form-check-label text-white" for="playStation2">PlayStation 2 </label>
+        <label class="form-check-label" for="playStation2">PlayStation 2 </label>
     </div>
     <div class="form-check form-check-inline">
         <input class="form-check-input" type="checkbox" value="nintendo 64" name="console[]" id="nintendo64">
-        <label class="form-check-label text-white" for="nintendo64">Nintendo 64 </label>
+        <label class="form-check-label" for="nintendo64">Nintendo 64 </label>
     </div>
     <div class="form-check form-check-inline">
         <input class="form-check-input" type="checkbox" value="amiga cd32" name="console[]" id="amigaCD32">
-        <label class="form-check-label text-white" for="amigaCD32">Amiga CD32 </label>
+        <label class="form-check-label" for="amigaCD32">Amiga CD32 </label>
     </div>
     <div class="form-check form-check-inline">
         <input class="form-check-input" type="checkbox" value="atari jaguar" name="console[]" id="atariJag">
-        <label class="form-check-label text-white" for="atariJag">Atari Jaguar </label>
+        <label class="form-check-label" for="atariJag">Atari Jaguar </label>
     </div>
     <div class="form-check form-check-inline">
         <input class="form-check-input" type="checkbox" value="sega 32x" name="console[]" id="sega32x">
-        <label class="form-check-label text-white" for="sega32x">Sega 32X </label>
+        <label class="form-check-label" for="sega32x">Sega 32X </label>
     </div>
     <div class="form-check form-check-inline">
         <input class="form-check-input" type="checkbox" value="turbografx-16" name="console[]" id="nec">
-        <label class="form-check-label text-white" for="nec">NEC TurboGrafx-16 </label>
+        <label class="form-check-label" for="nec">NEC TurboGrafx-16 </label>
     </div>
     <div class="form-check form-check-inline">
         <input class="form-check-input" type="checkbox" value="snes" name="console[]" id="snes">
-        <label class="form-check-label text-white" for="snes">SNES</label>
+        <label class="form-check-label" for="snes">SNES</label>
     </div>
+    <check if="{{ isset(@errors['console']) }}">
+        <span class="err">{{ @errors['console'] }}</span>
+    </check>
 
     <!--Button-->
     <button class="btn btn-primary" role="button">Next ></button>

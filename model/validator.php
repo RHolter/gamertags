@@ -42,7 +42,7 @@ class Validator
 
     for ($i = 0; $i < strlen($username); $i++) {
 
-      if (!ctype_alpha($username[$i]) || !ctype_digit($username[$i])) {
+      if (!ctype_alpha($username[$i])) {
         return FALSE;
       }
     }
@@ -55,15 +55,18 @@ class Validator
   static function validPassword($password)
   {
 
-    for ($i = 0; $i < strlen($password); $i++) {
+    // Validate password strength
+    $uppercase = preg_match('@[A-Z]@', $password);
+    $lowercase = preg_match('@[a-z]@', $password);
+    $number    = preg_match('@[0-9]@', $password);
+    $specialChars = preg_match('@[^\w]@', $password);
 
-      if (!ctype_alpha($password[$i]) || !ctype_digit($password[$i])) {
-        return FALSE;
-      }
+    if(!$uppercase || !$lowercase || !$number || !$specialChars || strlen($password) < 5) {
+      return false;
+
+    }else{
+      return true;
     }
-
-    return strlen(trim($password)) >= 4;
-
   }
 
   // validate email

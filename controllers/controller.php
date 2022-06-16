@@ -62,7 +62,7 @@ class Controller
           } else {
 
             $password = "";
-            $this->_f3->set('errors["password"]', 'Enter a password longer than 4 characters.');
+            $this->_f3->set('errors["password"]', 'Password should be at least 5 characters and should include at least one upper case letter, one number, and one special character.');
           }
 
           $this->_f3->set('password', $password);
@@ -125,7 +125,7 @@ class Controller
             $_SESSION['member'] = $member;
           } else {
             // Member
-            $_SESSION['member'] = new member($firstname, $lastname, $age, $username,
+            $_SESSION['member'] = new member($firstname, $lastname, $username, $age,
               $email, $console, $password);
           }
 
@@ -147,30 +147,27 @@ class Controller
   function VIP()
   {
 
-    $this->_f3->set('console', DataLayer::getConsoles());
-
-
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
       // Indoor interests
-      if (!Validator::validConsoles($_POST['console'])) {
+      if (!Validator::validConsoles($_POST['gamertags'])) {
 
         // Error message
-        $this->_f3->set('errors["console"]', 'An console was detected.');
+        $this->_f3->set('errors["gamertags"]', 'An console was detected.');
       } else {
 
-        if (!empty($_POST['console'])) {
+        if (!empty($_POST['gamertags'])) {
 
           // Setting session variable
-          $console = $_POST['console'];
+          $console = $_POST['gamertags'];
         } else {
 
           // Setting to 'None' if no indoor interests were selected
           $console = array("None");
         }
         // Setting member attribute and putting in the hive
-        $_SESSION['member']->setConsole($console);
-        $this->_f3->set('console', $console);
+        $_SESSION['member']->setGamertags($gamertags);
+        $this->_f3->set('gamertags', $gamertags);
       }
 
       // Redirect to profile summary if there are no errors

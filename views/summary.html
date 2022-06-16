@@ -5,7 +5,7 @@
     <title>Profile Summary</title>
 
     <!--CSS-->
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
 <!--Navbar-->
@@ -49,13 +49,13 @@
                 </tr>
 
                 <tr>
-                    <td class="py-2">Consoles: {{@SESSION.member->getConsole()}}</td>
+                    <td class="py-2">Consoles: {{ implode(", ", @SESSION.member->getConsole()) }}</td>
                 </tr>
                 <tr>
-                    <td class="py-2">Consoles: {{@SESSION.member->getAge()}}</td>
+                    <td class="py-2">Age: {{@SESSION.member->getAge()}}</td>
                 </tr>
                 <tr>
-                    <td class="py-2">Consoles: {{@SESSION.member->getGamertags()}}</td>
+                    <td class="py-2">Gamertags: {{@SESSION.member->getGamertags()}}</td>
                 </tr>
 
             </table>
