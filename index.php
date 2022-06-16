@@ -34,7 +34,7 @@ $f3->route('GET|POST /VIP', function () use ($f3) {
 
 //Profile summary route
 $f3->route('GET|POST /summary', function () use ($f3) {
-  $GLOBALS['con']->summary();
+  $GLOBALS['con']->Summary();
 });
 
 $f3->route('GET|POST /upload', function () {
