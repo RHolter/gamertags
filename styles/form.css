@@ -2,11 +2,105 @@ body {
     background-color: #e2fffd;
 }
 
+.jumbotron {
+    background-color: lavender;
+}
+
 .err {
     color: red;
+    display: list-item;
 }
 
 #premPic {
     height: 585px;
     width: 585px;
+}
+
+.aboutImg {
+    margin-right: 15px;
+}
+
+.bubble {
+    position: relative;
+    background: #ffffff;
+    color: #000000;
+    font-family: Verdana;
+    font-size: 20px;
+    line-height: 28px;
+    box-shadow: 7px 5px 10px 1px rgba(163, 163, 163, 0.94);
+    text-align: center;
+    width: 568px;
+    height: 184px;
+    border-radius: 16px;
+    padding: 0px;
+    border: #000000 solid 1px;
+}
+.bubble:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-width: 0 54px 48px 0;
+    border-color: transparent #ffffff transparent transparent;
+    bottom: -48px;
+    left: 37%;
+    margin-left: -27px;
+}
+.bubble:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    z-index: 0;
+    border-style: solid;
+    border-width: 0 55px 49px 0;
+    border-color: transparent #000000 transparent transparent;
+    bottom: -50px;
+    left: 37%;
+    margin-left: -27px;
+    display: block;
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    opacity: 100% !important;
+    font-size: 16px !important;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 205px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    top: -63px;
+    left: 98px;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+
+.viviImg {
+    width: 470px;
 }

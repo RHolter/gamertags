@@ -74,16 +74,8 @@ body {
     cursor: pointer;
 }
 
-.gamer-nav {
-    top: 0;
-    left: 0;
-    right: 0;
-    backdrop-filter: blur(6px);
-    background-color: rgba(256, 256, 256, 0.8);
-    box-shadow: 0 3px 2px -2px #fff;
-    z-index: 1000;
-}
-
 .header-text {
     font-family: 'VT323';
 }
+
+

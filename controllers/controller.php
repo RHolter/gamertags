@@ -62,7 +62,7 @@ class Controller
           } else {
 
             $password = "";
-            $this->_f3->set('errors["password"]', 'Password should be at least 5 characters and should include at least one upper case letter, one number, and one special character.');
+            $this->_f3->set('errors["password"]', 'Password should be at least 5 characters and should include at least one uppercase letter, one lowercase letter, one number, and one special character.');
           }
 
           $this->_f3->set('password', $password);
@@ -73,7 +73,6 @@ class Controller
             $email = $_POST['email'];
           } else {
 
-            $email = "No Email";
             $this->_f3->set('errors["email"]', 'Please enter a valid email.');
           }
 

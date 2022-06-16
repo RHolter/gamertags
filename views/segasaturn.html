@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Sega Games</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
 </head>
 <!-- Required meta tags -->
 <meta charset="utf-8">
@@ -11,56 +12,46 @@
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="styles/consoles.css">
+<link rel="stylesheet" href="styles/nav.css">
 
 <body>
 <!--Navbar-->
-<nav class="navbar navbar-light bg-dark">
-    <form class="form-inline">
-        <a href="{{@BASE}}"><button class="btn btn-outline-success mx-1" type="button">Home</button></a>
-        <a href="profile"><button class="btn btn-outline-success mx-1" type="button">Profile</button></a>
-
-        <div class="btn-group dropright">
-            <button type="button" class="btn btn-outline-success dropdown-toggle mx-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Consoles
-            </button>
-            <div class="dropdown-menu bg-dark">
-                <div class="list-group">
-                    <!-- Dropdown menu links -->
-                    <a href="snes"><button class="btn btn-outline-success my-1 mx-1" type="button">Super Nintendo</button></a>
-                    <a href="playstation"><button class="btn btn-outline-success my-1 mx-1" type="button">PlayStation</button></a>
-                    <a href="xbox"><button class="btn btn-outline-success my-1 mx-1" type="button">Xbox</button></a>
-                    <a href="segasaturn"><button class="btn btn-outline-success my-1 mx-1" type="button">Sega saturn</button></a>
-                    <a href="playstation2"><button class="btn btn-outline-success my-1 mx-1" type="button">PlayStation 2</button></a>
-                </div>
-            </div>
-        </div>
-    </form>
+<nav class="navbar position-absolute gamer-nav">
+    <a href="{{@BASE}}">
+        <img src="images/main/homeImage.png" class="homeImg">
+    </a>
+    <a href="about">
+        <img src="images/main/aboutImage.png" class="aboutImg">
+    </a>
+    <a href="profile">
+        <img src="images/main/userImage.png" class="userImg">
+    </a>
 </nav>
 <div class="container m-0 mw-100 container-height">
     <div class="row max-height">
         <div class="col-3 column">
-            <a id="snes" class="console-option hvr-curl-top-right" href="snes">
+            <a id="snes" class="console-option hvr-curl-bottom-right" href="snes">
                 <img width="175px" class="mb-4" src="images/main/nintendo-name.png">
                 <img width="140px" src="images/main/snes.png">
             </a>
-            <a id="ps" class="console-option hvr-curl-top-right" href="playstation">
+            <a id="ps" class="console-option hvr-curl-bottom-right" href="playstation">
                 <img width="180px" class="mb-4" src="images/main/playstation-name.png">
                 <img width="140px" src="images/main/playstation.png">
             </a>
-            <a id="sega" class="console-option hvr-curl-top-right" href="segasaturn">
+            <a id="sega" class="console-option hvr-curl-bottom-right" href="segasaturn">
                 <img width="140px" class="mb-4" src="images/main/sega-name.png">
                 <img width="140px" src="images/main/sega.png">
             </a>
-            <a id="gba" class="console-option hvr-curl-top-right" href="xbox">
+            <a id="gba" class="console-option hvr-curl-bottom-right" href="xbox">
                 <img width="140px" class="mb-4" src="images/main/xbox-name.png">
                 <img width="140px" src="images/main/xbox.png">
             </a>
-            <a id="n64" class="console-option hvr-curl-top-right" href="handheld">
+            <a id="n64" class="console-option hvr-curl-bottom-right" href="handheld">
                 <img width="175px" class="mb-4" src="images/main/gameboy-name.png">
                 <img width="140px" src="images/main/gameboy.png">
             </a>
         </div>
-        <div class="col-8">
+        <div class="col-8 pt">
             <div class="jumbotron">
                 <div>
                     <img width="175px" src="images/main/sega-name.png">
@@ -80,10 +71,10 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">3D Lemmings is played by using four different, movable cameras to
-                fly around and get an overview of the level. While some levels have fixed cameras,
-                most of the time they can be freely moved at any time, although without the ability
-                to tilt up or down. Another viewing option is the "virtual lemming" (VL) which allows
-                the player to see through the eyes of a selected lemming</textarea>
+fly around and get an overview of the level. While some levels have fixed cameras,
+most of the time they can be freely moved at any time, although without the ability
+to tilt up or down. Another viewing option is the "virtual lemming" (VL) which allows
+the player to see through the eyes of a selected lemming</textarea>
                                 <p class="text-white">Release Date(s): NA Jun 1992, EU Not Released, Japan March 1992</p>
                             </div>
                         </div>
@@ -99,11 +90,11 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">The game centers around Bug, a green bug – and Hollywood actor – who hopes to gain fame
-                by defeating the villainous Queen Cadavra. The game was developed with the titular character being considered
-                a possible mascot for the Saturn. This was due to the absence of a Sonic the Hedgehog game at the time of
-                the console's launch. Although the Bug! failed to capture consumers' attention, it received positive reviews
-                upon its release. Critics praised its graphics and colorful visual effects, but the game's music and
-                voice acting were criticized.</textarea>
+by defeating the villainous Queen Cadavra. The game was developed with the titular character being considered
+a possible mascot for the Saturn. This was due to the absence of a Sonic the Hedgehog game at the time of
+the console's launch. Although the Bug! failed to capture consumers' attention, it received positive reviews
+upon its release. Critics praised its graphics and colorful visual effects, but the game's music and
+voice acting were criticized.</textarea>
                                 <p class="text-white">Release Date(s): North America April 1992, EU September 1992, Japan November 1991</p>
                             </div>
                         </div>
@@ -119,9 +110,9 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">Doom is divided into three episodes: "Knee-Deep in the Dead", "The Shores of Hell", and
-                "Inferno". A fourth episode, "Thy Flesh Consumed", was added in an expanded version of the game, The Ultimate Doom,
-                released on April 30, 1995, two years after Doom and one year after Doom II. The campaign contains very few plot elements,
-                with the minimal story instead given in the instruction manual and in short text segues between episodes.</textarea>
+"Inferno". A fourth episode, "Thy Flesh Consumed", was added in an expanded version of the game, The Ultimate Doom,
+released on April 30, 1995, two years after Doom and one year after Doom II. The campaign contains very few plot elements,
+with the minimal story instead given in the instruction manual and in short text segues between episodes.</textarea>
                                 <p class="text-white">Release Date(s): NA August 1991, EU April 1992, Japan November 1990</p>
                             </div>
                         </div>
@@ -137,10 +128,10 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">he game includes an official soundtrack, team and player customisation options, 16 stadiums,
-                improved artificial intelligence and the Road to World Cup mode, with all 172 FIFA-registered national teams
-                that took part in the titular tournament's qualification process (including the automatically qualified Brazil and France).
-                No subsequent edition of the FIFA series attempted to replicate FIFA 98's inclusion of every FIFA national team,
-                up until 2010 FIFA World Cup South Africa which included all 199 FIFA nations that took part in qualifying.</textarea>
+improved artificial intelligence and the Road to World Cup mode, with all 172 FIFA-registered national teams
+that took part in the titular tournament's qualification process (including the automatically qualified Brazil and France).
+No subsequent edition of the FIFA series attempted to replicate FIFA 98's inclusion of every FIFA national team,
+up until 2010 FIFA World Cup South Africa which included all 199 FIFA nations that took part in qualifying.</textarea>
                                 <p class="text-white">Release Date(s): NA December 1997, EU Decemeber 1997, Japan Not Released</p>
                             </div>
                         </div>
@@ -156,12 +147,12 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">The planet of Zendor is rich in anti-gravity ore. In the past, pirates grew so strong that
-                they formed a faction called The Guild. The Guild and the Alliance of City States fought for control of the skies
-                for years until accidentally awakening giant battleships.
-                One man managed to get past the battleships and their defenses at Terra Sancta,
-                and now controls the last of the major water sources in the world. He allows the water to be controlled and
-                distributed by five of his allies, the "Five Kings".
-                The player takes on the role of a Prince of the Royal Alliance Expeditionary Forces in service to the Five Kings</textarea>
+they formed a faction called The Guild. The Guild and the Alliance of City States fought for control of the skies
+for years until accidentally awakening giant battleships.
+One man managed to get past the battleships and their defenses at Terra Sancta,
+and now controls the last of the major water sources in the world. He allows the water to be controlled and
+distributed by five of his allies, the "Five Kings".
+The player takes on the role of a Prince of the Royal Alliance Expeditionary Forces in service to the Five Kings</textarea>
                                 <p class="text-white">Release Date(s):North America December1996, EU Not Released, Japan March 1996</p>
                             </div>
                         </div>

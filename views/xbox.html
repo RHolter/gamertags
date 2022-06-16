@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>XBox Games</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
 </head>
 <!-- Required meta tags -->
 <meta charset="utf-8">
@@ -11,56 +12,46 @@
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="styles/consoles.css">
+<link rel="stylesheet" href="styles/nav.css">
 
 <body>
 <!--Navbar-->
-<nav class="navbar navbar-light bg-dark">
-    <form class="form-inline">
-        <a href="{{@BASE}}"><button class="btn btn-outline-success mx-1" type="button">Home</button></a>
-        <a href="profile"><button class="btn btn-outline-success mx-1" type="button">Profile</button></a>
-
-        <div class="btn-group dropright">
-            <button type="button" class="btn btn-outline-success dropdown-toggle mx-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Consoles
-            </button>
-            <div class="dropdown-menu bg-dark">
-                <div class="list-group">
-                    <!-- Dropdown menu links -->
-                    <a href="snes"><button class="btn btn-outline-success my-1 mx-1" type="button">Super Nintendo</button></a>
-                    <a href="playstation"><button class="btn btn-outline-success my-1 mx-1" type="button">PlayStation</button></a>
-                    <a href="xbox"><button class="btn btn-outline-success my-1 mx-1" type="button">Xbox</button></a>
-                    <a href="segasaturn"><button class="btn btn-outline-success my-1 mx-1" type="button">Sega saturn</button></a>
-                    <a href="playstation2"><button class="btn btn-outline-success my-1 mx-1" type="button">PlayStation 2</button></a>
-                </div>
-            </div>
-        </div>
-    </form>
+<nav class="navbar position-absolute gamer-nav">
+    <a href="{{@BASE}}">
+        <img src="images/main/homeImage.png" class="homeImg">
+    </a>
+    <a href="about">
+        <img src="images/main/aboutImage.png" class="aboutImg">
+    </a>
+    <a href="profile">
+        <img src="images/main/userImage.png" class="userImg">
+    </a>
 </nav>
 <div class="container m-0 mw-100 container-height">
     <div class="row max-height">
         <div class="col-3 column">
-            <a id="snes" class="console-option hvr-curl-top-right" href="snes">
+            <a id="snes" class="console-option hvr-curl-bottom-right" href="snes">
                 <img width="175px" class="mb-4" src="images/main/nintendo-name.png">
                 <img width="140px" src="images/main/snes.png">
             </a>
-            <a id="ps" class="console-option hvr-curl-top-right" href="playstation">
+            <a id="ps" class="console-option hvr-curl-bottom-right" href="playstation">
                 <img width="180px" class="mb-4" src="images/main/playstation-name.png">
                 <img width="140px" src="images/main/playstation.png">
             </a>
-            <a id="sega" class="console-option hvr-curl-top-right" href="segasaturn">
+            <a id="sega" class="console-option hvr-curl-bottom-right" href="segasaturn">
                 <img width="140px" class="mb-4" src="images/main/sega-name.png">
                 <img width="140px" src="images/main/sega.png">
             </a>
-            <a id="gba" class="console-option hvr-curl-top-right" href="xbox">
+            <a id="gba" class="console-option hvr-curl-bottom-right" href="xbox">
                 <img width="140px" class="mb-4" src="images/main/xbox-name.png">
                 <img width="140px" src="images/main/xbox.png">
             </a>
-            <a id="n64" class="console-option hvr-curl-top-right" href="handheld">
+            <a id="n64" class="console-option hvr-curl-bottom-right" href="handheld">
                 <img width="175px" class="mb-4" src="images/main/gameboy-name.png">
                 <img width="140px" src="images/main/gameboy.png">
             </a>
         </div>
-        <div class="col-8">
+        <div class="col-8 pt">
                 <div class="jumbotron">
                     <div>
                         <img width="175px" src="images/main/xbox-name.png">
@@ -80,14 +71,14 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">Star Wars: Republic Commando is a tactical first-person shooter video game developed
-                                and published by LucasArts. It was released for the Xbox and Microsoft Windows in March 2005.[2] Set in
-                                the Star Wars Legends expanded universe, the game revolves around Delta Squad, a special ops unit within
-                                the Galactic Republic's Clone Army consisting of four genetically-enhanced clone troopers, referred to
-                                as "Clone/Republic Commandos". Throughout the single-player campaign, players assume the role of the
-                                squad's leader, RC-1138 ("Boss"), and complete various missions during the Clone Wars. Players can also
-                                indirectly control the actions of their squad mates RC-1262 ("Scorch"), RC-1140 ("Fixer"), and RC-1207
-                                ("Sev") by issuing different commands, which allow for certain situations to be approached in multiple
-                                ways </textarea>
+and published by LucasArts. It was released for the Xbox and Microsoft Windows in March 2005.[2] Set in
+the Star Wars Legends expanded universe, the game revolves around Delta Squad, a special ops unit within
+the Galactic Republic's Clone Army consisting of four genetically-enhanced clone troopers, referred to
+as "Clone/Republic Commandos". Throughout the single-player campaign, players assume the role of the
+squad's leader, RC-1138 ("Boss"), and complete various missions during the Clone Wars. Players can also
+indirectly control the actions of their squad mates RC-1262 ("Scorch"), RC-1140 ("Fixer"), and RC-1207
+("Sev") by issuing different commands, which allow for certain situations to be approached in multiple
+ways</textarea>
                                 <p class="text-white">Release Date(s): February 28th, 2005</p>
                             </div>
                         </div>
@@ -103,13 +94,13 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">The Incredible Hulk: Ultimate Destruction is a 2005 action-adventure video game
-                                developed by Radical Entertainment and published by Vivendi Universal Games (VU Games). The game is
-                                based on the Marvel Comics superhero Hulk and showcases an open world with destructible environments. A
-                                stand-alone sequel to the 2003 game Hulk, the narrative follows the Hulk as he is subconsciously
-                                influenced by his human alter-ego Bruce Banner and his psychotherapist Leonard Samson into assembling a
-                                device that will mend Banner's psyche and prevent the emergence of a darker personality. Aside from
-                                advancing the game's story, the player can engage in side missions and purchase new abilities for the
-                                Hulk to use.</textarea>
+developed by Radical Entertainment and published by Vivendi Universal Games (VU Games). The game is
+based on the Marvel Comics superhero Hulk and showcases an open world with destructible environments. A
+stand-alone sequel to the 2003 game Hulk, the narrative follows the Hulk as he is subconsciously
+influenced by his human alter-ego Bruce Banner and his psychotherapist Leonard Samson into assembling a
+device that will mend Banner's psyche and prevent the emergence of a darker personality. Aside from
+advancing the game's story, the player can engage in side missions and purchase new abilities for the
+Hulk to use.</textarea>
                                 <p class="text-white">Release Date(s): North America August 2005</p>
                             </div>
                         </div>
@@ -125,10 +116,10 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">Spider Man (also released as Spider-Man: The Movie) is a level based action adventure
-                                game based upon the Marvel Comics character, Spider-Man, and is directly based on the first feature film
-                                starring the eponymous character. It was developed by Treyarch and released in 2002 for PC and several
-                                other video game consoles. The game has many scenes, as well as villains from the comic books, that did
-                                not appear in the film..</textarea>
+game based upon the Marvel Comics character, Spider-Man, and is directly based on the first feature film
+starring the eponymous character. It was developed by Treyarch and released in 2002 for PC and several
+other video game consoles. The game has many scenes, as well as villains from the comic books, that did
+not appear in the film.</textarea>
                                 <p class="text-white">Release Date(s): April 16th 2002</p>
                             </div>
                         </div>
@@ -144,13 +135,13 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">The video game is based on the Marvel comic book series with the same name, a 6-issue
-                                miniseries published from June to December 2005. The miniseries does not depict the events in the game
-                                or vice versa, and has a completely different story than the video game. There are even points in the
-                                video game story and the comic books that directly contradict each other. The comic does, however, star
-                                the same characters as the video game and introduces the EA characters with, aside from one or two minor
-                                details, the same background stories and powers. The EA characters are said to be part of the regular
-                                Marvel continuity but due to the game's poor response and the fact that they're owned by Electronic Arts,
-                                they have only appeared in the above-mentioned miniseries..</textarea>
+miniseries published from June to December 2005. The miniseries does not depict the events in the game
+or vice versa, and has a completely different story than the video game. There are even points in the
+video game story and the comic books that directly contradict each other. The comic does, however, star
+the same characters as the video game and introduces the EA characters with, aside from one or two minor
+details, the same background stories and powers. The EA characters are said to be part of the regular
+Marvel continuity but due to the game's poor response and the fact that they're owned by Electronic Arts,
+they have only appeared in the above-mentioned miniseries.</textarea>
                                 <p class="text-white">Release Date(s): September 20th, 2005</p>
                             </div>
                         </div>
@@ -166,17 +157,17 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">Halo: Combat Evolved[b] is a 2001 first-person shooter game developed by Bungie and
-                                published by Microsoft Game Studios. It was released as a launch game for Microsoft's Xbox video game
-                                console on November 15, 2001. The game was ported to Microsoft Windows and Mac OS X in 2003. It was later
-                                released as a downloadable Xbox Original for the Xbox 360. Halo is set in the twenty-sixth century, with
-                                the player assuming the role of the Master Chief, a cybernetically enhanced supersoldier. The Chief is
-                                accompanied by Cortana, an artificial intelligence. Players battle aliens as they attempt to uncover the
-                                secrets of the eponymous Halo, a ring-shaped artificial world. Bungie began the development of what
-                                would eventually become Halo CE in 1997. Initially, the game was a real-time strategy game that morphed
-                                into a third-person shooter before becoming a first-person shooter. During development, Microsoft acquired
-                                Bungie and turned Halo into a launch game for its first video game console, the Xbox.
-                                Halo was a critical and commercial success and is often praised as one of the greatest video games ever
-                                made.</textarea>
+published by Microsoft Game Studios. It was released as a launch game for Microsoft's Xbox video game
+console on November 15, 2001. The game was ported to Microsoft Windows and Mac OS X in 2003. It was later
+released as a downloadable Xbox Original for the Xbox 360. Halo is set in the twenty-sixth century, with
+the player assuming the role of the Master Chief, a cybernetically enhanced supersoldier. The Chief is
+accompanied by Cortana, an artificial intelligence. Players battle aliens as they attempt to uncover the
+secrets of the eponymous Halo, a ring-shaped artificial world. Bungie began the development of what
+would eventually become Halo CE in 1997. Initially, the game was a real-time strategy game that morphed
+into a third-person shooter before becoming a first-person shooter. During development, Microsoft acquired
+Bungie and turned Halo into a launch game for its first video game console, the Xbox.
+Halo was a critical and commercial success and is often praised as one of the greatest video games ever
+made.</textarea>
                                 <p class="text-white">Release Date(s):November 15th 2001</p>
                             </div>
                         </div>

@@ -8,33 +8,23 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/form.css">
-
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <title>User Profile</title>
 </head>
 
 <body>
 <!--Navbar-->
-<nav class="navbar navbar-light bg-dark">
-    <form class="form-inline">
-        <a href="{{@BASE}}"><button class="btn btn-outline-success mx-1" type="button">Home</button></a>
-        <a href="profile"><button class="btn btn-outline-success mx-1" type="button">Profile</button></a>
-
-        <div class="btn-group dropright">
-            <button type="button" class="btn btn-outline-success dropdown-toggle mx-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Consoles
-            </button>
-            <div class="dropdown-menu bg-dark">
-                <div class="list-group">
-                    <!-- Dropdown menu links -->
-                    <a href="snes"><button class="btn btn-outline-success my-1 mx-1" type="button">Super Nintendo</button></a>
-                    <a href="playstation"><button class="btn btn-outline-success my-1 mx-1" type="button">PlayStation</button></a>
-                    <a href="xbox"><button class="btn btn-outline-success my-1 mx-1" type="button">Xbox</button></a>
-                    <a href="segasaturn"><button class="btn btn-outline-success my-1 mx-1" type="button">Sega saturn</button></a>
-                    <a href="playstation2"><button class="btn btn-outline-success my-1 mx-1" type="button">PlayStation 2</button></a>
-                </div>
-            </div>
-        </div>
-    </form>
+<nav class="navbar position-absolute gamer-nav">
+    <a href="{{@BASE}}">
+        <img src="images/main/homeImage.png" class="homeImg">
+    </a>
+    <a href="about">
+        <img src="images/main/aboutImage.png" class="aboutImg">
+    </a>
+    <a href="profile">
+        <img src="images/main/userImage.png" class="userImg">
+    </a>
 </nav>
 
 <!--Body-->
@@ -54,12 +44,12 @@
         <hr class="divider">
         <form action="profile" method="post">
             <label for="firstname"><b>First Name</b></label>
-            <input type="text" class="form-control mb-3" id="firstname" name="firstname" value="{{ @firstname }}" placeholder="First Name">
+            <input type="text" class="form-control" id="firstname" name="firstname" value="{{ @firstname }}" placeholder="First Name">
             <check if="{{ isset(@errors['firstname']) }}">
                 <span class="err">{{ @errors['firstname'] }}</span>
             </check>
-            <label for="lastname"><b>Last Name</b></label>
-            <input type="text" class="form-control mb-3" id="lastname" name="lastname" value="{{ @lastname }}" placeholder="Last Name">
+            <label for="lastname" class="mt-2"><b>Last Name</b></label>
+            <input type="text" class="form-control" id="lastname" name="lastname" value="{{ @lastname }}" placeholder="Last Name">
             <check if="{{ isset(@errors['lastname']) }}">
                 <span class="err">{{ @errors['lastname'] }}</span>
             </check>
@@ -68,7 +58,9 @@
             <check if="{{ isset(@errors['username']) }}">
                 <span class="err">{{ @errors['username'] }}</span>
             </check>
-            <label for="username" class="mt-2"><b>Password</b></label>
+            <div class="tooltip mt-2"><b>Password(?)</b>
+                <span class="tooltiptext">Requires!<br>minimum 5 characters long,<br> 1 uppercase letter,<br> 1 lowercase letter<br> 1 special character,<br> 1 number</span>
+            </div>
             <input type="password" class="form-control" id="password" name="password" value="{{ @password }}" placeholder="Password">
             <check if="{{ isset(@errors['password']) }}">
                 <span class="err">{{ @errors['password'] }}</span>
@@ -79,11 +71,11 @@
                 <span class="err">{{ @errors['email'] }}</span>
             </check>
             <label for="age"><b>Age</b></label>
-            <input type="text" class="form-control mb-3" id="age" name="age" value="{{ @age }}" placeholder="Age">
+            <input type="text" class="form-control" id="age" name="age" value="{{ @age }}" placeholder="Age">
             <check if="{{ isset(@errors['age']) }}">
                 <span class="err">{{ @errors['age'] }}</span>
             </check>
-            <label class="my-3 mr-1"><b>Consoles</b></label><br>
+            <label class="mt-3"><b>Consoles</b></label><br>
             <div class="form-check form-check-inline my-3">
                 <input class="form-check-input" type="checkbox" id="segaSaturn" name="console[]" value="Sega Saturn">
                 <label class="form-check-label" for="segaSaturn">Sega Saturn</label>
@@ -117,10 +109,10 @@
                 <label class="form-check-label" for="snes">Super Nintendo</label>
             </div>
             <div class="form-group mt-2">
-                <label class="mt-2"><b>Premium Membership</b></label>
+                <label class="mt-2"><b>Vip Membership</b></label>
                 <label class="form-check-label d-block ml-4">
                     <input type="checkbox" name="vip" class="form-check-input" value="vip">
-                    Sign me up for a Premium Account!</label>
+                    Sign me up for a Vip Account!</label>
             </div>
             <div class="d-flex float-right my-3">
                 <button class="btn btn-primary" role="button">Next ></button>

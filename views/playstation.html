@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>PlayStation Games</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
 </head>
 <!-- Required meta tags -->
 <meta charset="utf-8">
@@ -11,56 +12,46 @@
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="styles/consoles.css">
+<link rel="stylesheet" href="styles/nav.css">
 
 <body>
 <!--Navbar-->
-<nav class="navbar navbar-light bg-dark">
-    <form class="form-inline">
-        <a href="{{@BASE}}"><button class="btn btn-outline-success mx-1" type="button">Home</button></a>
-        <a href="profile"><button class="btn btn-outline-success mx-1" type="button">Profile</button></a>
-
-        <div class="btn-group dropright">
-            <button type="button" class="btn btn-outline-success dropdown-toggle mx-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Consoles
-            </button>
-            <div class="dropdown-menu bg-dark">
-                <div class="list-group">
-                    <!-- Dropdown menu links -->
-                    <a href="snes"><button class="btn btn-outline-success my-1 mx-1" type="button">Super Nintendo</button></a>
-                    <a href="playstation"><button class="btn btn-outline-success my-1 mx-1" type="button">PlayStation</button></a>
-                    <a href="xbox"><button class="btn btn-outline-success my-1 mx-1" type="button">Xbox</button></a>
-                    <a href="segasaturn"><button class="btn btn-outline-success my-1 mx-1" type="button">Sega saturn</button></a>
-                    <a href="playstation2"><button class="btn btn-outline-success my-1 mx-1" type="button">PlayStation 2</button></a>
-                </div>
-            </div>
-        </div>
-    </form>
+<nav class="navbar position-absolute gamer-nav">
+    <a href="{{@BASE}}">
+        <img src="images/main/homeImage.png" class="homeImg">
+    </a>
+    <a href="about">
+        <img src="images/main/aboutImage.png" class="aboutImg">
+    </a>
+    <a href="profile">
+        <img src="images/main/userImage.png" class="userImg">
+    </a>
 </nav>
 <div class="container m-0 mw-100 container-height">
     <div class="row max-height">
         <div class="col-3 column">
-            <a id="snes" class="console-option hvr-curl-top-right" href="snes">
+            <a id="snes" class="console-option hvr-curl-bottom-right" href="snes">
                 <img width="175px" class="mb-4" src="images/main/nintendo-name.png">
                 <img width="140px" src="images/main/snes.png">
             </a>
-            <a id="ps" class="console-option hvr-curl-top-right" href="playstation">
+            <a id="ps" class="console-option hvr-curl-bottom-right" href="playstation">
                 <img width="180px" class="mb-4" src="images/main/playstation-name.png">
                 <img width="140px" src="images/main/playstation.png">
             </a>
-            <a id="sega" class="console-option hvr-curl-top-right" href="segasaturn">
+            <a id="sega" class="console-option hvr-curl-bottom-right" href="segasaturn">
                 <img width="140px" class="mb-4" src="images/main/sega-name.png">
                 <img width="140px" src="images/main/sega.png">
             </a>
-            <a id="gba" class="console-option hvr-curl-top-right" href="xbox">
+            <a id="gba" class="console-option hvr-curl-bottom-right" href="xbox">
                 <img width="140px" class="mb-4" src="images/main/xbox-name.png">
                 <img width="140px" src="images/main/xbox.png">
             </a>
-            <a id="n64" class="console-option hvr-curl-top-right" href="handheld">
+            <a id="n64" class="console-option hvr-curl-bottom-right" href="handheld">
                 <img width="175px" class="mb-4" src="images/main/gameboy-name.png">
                 <img width="140px" src="images/main/gameboy.png">
             </a>
         </div>
-        <div class="col-8">
+        <div class="col-8 pt">
             <div class="jumbotron">
                 <div>
                     <img width="175px" src="images/main/playstation-name.png">
@@ -80,9 +71,9 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">In Blood Omen, the player follows Kain, a slain nobleman newly resurrected as a vampire.
-                                Seeking revenge against his murderers and a cure to his vampiric curse, Kain is tasked with traversing the
-                                fictional land of Nosgoth and slaughtering the Circle of Nine, a corrupt oligarchy of godlike sorcerers, but
-                                slowly begins to forsake humanity and view his transformation as a blessing. </textarea>
+Seeking revenge against his murderers and a cure to his vampiric curse, Kain is tasked with traversing the
+fictional land of Nosgoth and slaughtering the Circle of Nine, a corrupt oligarchy of godlike sorcerers, but
+slowly begins to forsake humanity and view his transformation as a blessing.</textarea>
                                 <p class="text-white">Release Date(s): NA May 1998, EU Not Released, Japan Not Released</p>
                             </div>
                         </div>
@@ -98,9 +89,9 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">The game begins as a wanderer named Bartz investigates a fallen meteor. There, he encounters
-                                several characters, one of whom reveals the danger facing the four Crystals that control the world's elements.
-                                These Crystals act as a seal on Exdeath, an evil sorcerer. Bartz and his party must keep the Crystals from being
-                                exploited by Exdeath's influence and prevent his resurgence </textarea>
+several characters, one of whom reveals the danger facing the four Crystals that control the world's elements.
+These Crystals act as a seal on Exdeath, an evil sorcerer. Bartz and his party must keep the Crystals from being
+exploited by Exdeath's influence and prevent his resurgence</textarea>
                                 <p class="text-white">Release Date(s): North America August 1995, EU September 1995, Japan December 1995 </p>
                             </div>
                         </div>
@@ -116,12 +107,12 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">The story takes place after Ivalice ended its war with the two nations in what is known
-                                as the Fifty Years War, and is facing economic problems and political strife. The king of Ivalice has recently
-                                died and his heir is an infant, so a regent is needed to rule in place of the prince. The kingdom is split
-                                between two candidates named Prince Goltana, represented by the Black Lion, and Prince Larg, symbolized by
-                                the White Lion. The conflict leads to what is known in the game as the Lion War. Behind this backdrop is
-                                a revelation by the game's historian Alazlam J. Durai, who seeks to reveal the story of an unknown character
-                                whose role in the Lion War was major but was covered up by the kingdom's church </textarea>
+as the Fifty Years War, and is facing economic problems and political strife. The king of Ivalice has recently
+died and his heir is an infant, so a regent is needed to rule in place of the prince. The kingdom is split
+between two candidates named Prince Goltana, represented by the Black Lion, and Prince Larg, symbolized by
+the White Lion. The conflict leads to what is known in the game as the Lion War. Behind this backdrop is
+a revelation by the game's historian Alazlam J. Durai, who seeks to reveal the story of an unknown character
+whose role in the Lion War was major but was covered up by the kingdom's church</textarea>
                                 <p class="text-white">Release Date(s): NA June 1997, EU Not Released, Japan January 1998</p>
                             </div>
                         </div>
@@ -137,8 +128,8 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">The plot follows the members of Public Security Section 9, mainly consisting of Major Motoko
-                                Kusanagi, Chief Aramaki, Batou, Togusa, Ishikawa, Saito, and a nameless male, the Rookie, controlled by the
-                                player. The game's story is told using mission briefings and animated cutscenes.</textarea>
+Kusanagi, Chief Aramaki, Batou, Togusa, Ishikawa, Saito, and a nameless male, the Rookie, controlled by the
+player. The game's story is told using mission briefings and animated cutscenes.</textarea>
                                 <p class="text-white">Release Date(s): NA October 1997, EU July 1998, Japan July 1998</p>
                             </div>
                         </div>
@@ -154,9 +145,9 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">Gran Turismo is a racing game. The player must maneuver a car to compete against artificially
-                                intelligent drivers on various race tracks. The game uses two different modes: Arcade Mode and Simulation
-                                Mode (Gran Turismo Mode in PAL and Japanese versions). In the arcade mode, the player can freely choose
-                                the courses and vehicles they wish to use. Winning races unlocks additional cars and courses.</textarea>
+intelligent drivers on various race tracks. The game uses two different modes: Arcade Mode and Simulation
+Mode (Gran Turismo Mode in PAL and Japanese versions). In the arcade mode, the player can freely choose
+the courses and vehicles they wish to use. Winning races unlocks additional cars and courses.</textarea>
                                 <p class="text-white">Release Date(s): North America , EU , Japan</p>
                             </div>
                         </div>
@@ -180,13 +171,13 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">God of War is a video game for the Sony PS2 console released on March 22, 2005. As an
-                                action-adventure game heavily influenced by Greek mythology, God of War was developed by Sony Computer
-                                Entertainment's Santa Monica division. It was very well received by critics and fans alike and was the
-                                recipient of many awards, including "Game of the Year" honors from the Academy of Interactive Arts &
-                                Sciences. IGN even named God of War the best PlayStation 2 game ever. The game is now available in the
-                                PlayStation 2's lineup of Greatest Hits. Thanks in part to the critical and commercial success of the
-                                original, a sequel titled God of War II was released March 13, 2007. In 2007, IGN named God of War as
-                                the greatest PlayStation 2 game of all time, on their Top 25 PS2 Games list.</textarea>
+action-adventure game heavily influenced by Greek mythology, God of War was developed by Sony Computer
+Entertainment's Santa Monica division. It was very well received by critics and fans alike and was the
+recipient of many awards, including "Game of the Year" honors from the Academy of Interactive Arts &
+Sciences. IGN even named God of War the best PlayStation 2 game ever. The game is now available in the
+PlayStation 2's lineup of Greatest Hits. Thanks in part to the critical and commercial success of the
+original, a sequel titled God of War II was released March 13, 2007. In 2007, IGN named God of War as
+the greatest PlayStation 2 game of all time, on their Top 25 PS2 Games list.</textarea>
                                 <p class="text-white">Release Date(s): March 22nd 2005</p>
                             </div>
                         </div>
@@ -202,15 +193,15 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">Grand Theft Auto: San Andreas is a 2004 action-adventure game developed by Rockstar
-                                North and published by Rockstar Games. It is the fifth main entry in the Grand Theft Auto series, following
-                                2002's Grand Theft Auto: Vice City, and the seventh installment overall. It was released in October 2004
-                                for the PlayStation 2, in June 2005 for Microsoft Windows and Xbox, and in November 2010 for Mac OS
-                                X.[2][3] The game is set within an open world environment that players can explore and interact with at
-                                their leisure. The story follows former gangster Carl "CJ" Johnson, who returns home following his mother's
-                                murder and is drawn back into his former gang and a life of crime while clashing with corrupt authorities
-                                and powerful criminals. Carl's journey takes him across the fictional U.S. state of San Andreas, which is
-                                heavily based on California and Nevada and encompasses three major cities: Los Santos (inspired by
-                                Los Angeles), San Fierro (San Francisco) and Las Venturas (Las Vegas).</textarea>
+North and published by Rockstar Games. It is the fifth main entry in the Grand Theft Auto series, following
+2002's Grand Theft Auto: Vice City, and the seventh installment overall. It was released in October 2004
+for the PlayStation 2, in June 2005 for Microsoft Windows and Xbox, and in November 2010 for Mac OS
+X.[2][3] The game is set within an open world environment that players can explore and interact with at
+their leisure. The story follows former gangster Carl "CJ" Johnson, who returns home following his mother's
+murder and is drawn back into his former gang and a life of crime while clashing with corrupt authorities
+and powerful criminals. Carl's journey takes him across the fictional U.S. state of San Andreas, which is
+heavily based on California and Nevada and encompasses three major cities: Los Santos (inspired by
+Los Angeles), San Fierro (San Francisco) and Las Venturas (Las Vegas).</textarea>
                                 <p class="text-white">Release Date(s): North America October 26th 2004</p>
                             </div>
                         </div>
@@ -226,10 +217,10 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">NBA Street Vol. 2 is a basketball video game, published under the EA Sports BIG label
-                                and developed by EA Canada. It is the sequel to NBA Street and the second game in the NBA Street series.
-                                It was released on April 29, 2003 for the PlayStation 2, GameCube, and, for the first time in the series,
-                                on the Xbox. Japan was only able to see a PlayStation 2 release of this game. The GameCube version was
-                                also planned to be released in that region, but it was canceled for unknown reasons.</textarea>
+and developed by EA Canada. It is the sequel to NBA Street and the second game in the NBA Street series.
+It was released on April 29, 2003 for the PlayStation 2, GameCube, and, for the first time in the series,
+on the Xbox. Japan was only able to see a PlayStation 2 release of this game. The GameCube version was
+also planned to be released in that region, but it was canceled for unknown reasons.</textarea>
                                 <p class="text-white">Release Date(s): April 29th 2003</p>
                             </div>
                         </div>
@@ -245,15 +236,15 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">Burnout 3: Takedown is a 2004 racing video game developed by Criterion Games and
-                                published by Electronic Arts. It is the third instalment in the Burnout series, which is characterised
-                                by fast-paced arcade racing. A staple of the series is the use of boost, earned through risky driving,
-                                to rapidly increase a car's speed. The central mechanic introduced in Burnout 3 is Takedowns, which allow
-                                players to slam their opponents until they crash. Takedowns work in conjunction with the boost system by
-                                filling up and extending the boost meter. Aside from standard circuit races, the game features modes focused
-                                on performing Takedowns on rival vehicles and causing monetary damage at a junction occupied with traffic.
-                                Each game variant is featured in a single-player campaign mode called World Tour, which serves as the
-                                primary method for unlocking new and faster cars. The game supports both online and split-screen
-                                multiplayer.</textarea>
+published by Electronic Arts. It is the third instalment in the Burnout series, which is characterised
+by fast-paced arcade racing. A staple of the series is the use of boost, earned through risky driving,
+to rapidly increase a car's speed. The central mechanic introduced in Burnout 3 is Takedowns, which allow
+players to slam their opponents until they crash. Takedowns work in conjunction with the boost system by
+filling up and extending the boost meter. Aside from standard circuit races, the game features modes focused
+on performing Takedowns on rival vehicles and causing monetary damage at a junction occupied with traffic.
+Each game variant is featured in a single-player campaign mode called World Tour, which serves as the
+primary method for unlocking new and faster cars. The game supports both online and split-screen
+multiplayer.</textarea>
                                 <p class="text-white">Release Date(s): September 8th 2004</p>
                             </div>
                         </div>
@@ -269,14 +260,14 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">Tony Hawk's Underground is a skateboarding video game and the fifth entry in the Tony
-                                Hawk's series after Tony Hawk's Pro Skater 4. It was developed by Neversoft and published by Activision
-                                in 2003 for the GameCube, PlayStation 2, Xbox, and Game Boy Advance. In 2004, it was published for Microsoft
-                                Windows in Australia and New Zealand as a budget release. Underground is built upon the skateboarding
-                                formula of previous Tony Hawk's games: the player explores levels and completes goals while performing
-                                tricks. The game features a new focus on customization; the player, instead of selecting a professional
-                                skater, creates a custom character. Underground adds the ability for players to dismount their boards
-                                and explore on foot. The plot follows the player character and their friend Eric Sparrow as the two
-                                become professionals and grow apart.</textarea>
+Hawk's series after Tony Hawk's Pro Skater 4. It was developed by Neversoft and published by Activision
+in 2003 for the GameCube, PlayStation 2, Xbox, and Game Boy Advance. In 2004, it was published for Microsoft
+Windows in Australia and New Zealand as a budget release. Underground is built upon the skateboarding
+formula of previous Tony Hawk's games: the player explores levels and completes goals while performing
+tricks. The game features a new focus on customization; the player, instead of selecting a professional
+skater, creates a custom character. Underground adds the ability for players to dismount their boards
+and explore on foot. The plot follows the player character and their friend Eric Sparrow as the two
+become professionals and grow apart.</textarea>
                                 <p class="text-white">Release Date(s): October 27th 2003</p>
                             </div>
                         </div>
@@ -292,12 +283,12 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">Star Wars: Battlefront II is a 2005 first-person shooter and third-person shooter
-                                video game based on the Star Wars film franchise. Developed by Pandemic Studios and published by LucasArts,
-                                it is a sequel to 2004's Star Wars: Battlefront and the second game in the Star Wars: Battlefront series.
-                                The game was released in PAL regions on October 31, 2005, on the PlayStation 2, PlayStation Portable (PSP),
-                                Microsoft Windows, and Xbox platforms, and in North America on November 1 of the same year. It was
-                                released on the PlayStation Store on October 20, 2009, for download on the PSP. The PSP version was
-                                developed by Savage Entertainment.</textarea>
+video game based on the Star Wars film franchise. Developed by Pandemic Studios and published by LucasArts,
+it is a sequel to 2004's Star Wars: Battlefront and the second game in the Star Wars: Battlefront series.
+The game was released in PAL regions on October 31, 2005, on the PlayStation 2, PlayStation Portable (PSP),
+Microsoft Windows, and Xbox platforms, and in North America on November 1 of the same year. It was
+released on the PlayStation Store on October 20, 2009, for download on the PSP. The PSP version was
+developed by Savage Entertainment.</textarea>
                                 <p class="text-white">Release Date(s): November 1st 2005</p>
                             </div>
                         </div>

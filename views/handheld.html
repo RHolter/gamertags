@@ -4,57 +4,49 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/consoles.css">
+    <link rel="stylesheet" href="styles/nav.css">
 </head>
 <body>
-<nav class="navbar navbar-light bg-dark">
-    <form class="form-inline">
-        <a href="{{@BASE}}"><button class="btn btn-outline-success mx-1" type="button">Home</button></a>
-        <a href="profile"><button class="btn btn-outline-success mx-1" type="button">Profile</button></a>
-
-        <div class="btn-group dropright">
-            <button type="button" class="btn btn-outline-success dropdown-toggle mx-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Consoles
-            </button>
-            <div class="dropdown-menu bg-dark">
-                <div class="list-group">
-                    <!-- Dropdown menu links -->
-                    <a href="snes"><button class="btn btn-outline-success my-1 mx-1" type="button">Super Nintendo</button></a>
-                    <a href="playstation"><button class="btn btn-outline-success my-1 mx-1" type="button">PlayStation</button></a>
-                    <a href="xbox"><button class="btn btn-outline-success my-1 mx-1" type="button">Xbox</button></a>
-                    <a href="segasaturn"><button class="btn btn-outline-success my-1 mx-1" type="button">Sega saturn</button></a>
-                    <a href="playstation2"><button class="btn btn-outline-success my-1 mx-1" type="button">PlayStation 2</button></a>
-                </div>
-            </div>
-        </div>
-    </form>
+<nav class="navbar position-absolute gamer-nav">
+    <a href="{{@BASE}}">
+        <img src="images/main/homeImage.png" class="homeImg">
+    </a>
+    <a href="about">
+        <img src="images/main/aboutImage.png" class="aboutImg">
+    </a>
+    <a href="profile">
+        <img src="images/main/userImage.png" class="userImg">
+    </a>
 </nav>
 <div class="container m-0 mw-100 container-height">
     <div class="row max-height">
         <div class="col-3 column">
-            <a id="snes" class="console-option hvr-curl-top-right" href="snes">
+            <a id="snes" class="console-option hvr-curl-bottom-right" href="snes">
                 <img width="175px" class="mb-4" src="images/main/nintendo-name.png">
                 <img width="140px" src="images/main/snes.png">
             </a>
-            <a id="ps" class="console-option hvr-curl-top-right" href="playstation">
+            <a id="ps" class="console-option hvr-curl-bottom-right" href="playstation">
                 <img width="180px" class="mb-4" src="images/main/playstation-name.png">
                 <img width="140px" src="images/main/playstation.png">
             </a>
-            <a id="sega" class="console-option hvr-curl-top-right" href="segasaturn">
+            <a id="sega" class="console-option hvr-curl-bottom-right" href="segasaturn">
                 <img width="140px" class="mb-4" src="images/main/sega-name.png">
                 <img width="140px" src="images/main/sega.png">
             </a>
-            <a id="gba" class="console-option hvr-curl-top-right" href="xbox">
+            <a id="gba" class="console-option hvr-curl-bottom-right" href="xbox">
                 <img width="140px" class="mb-4" src="images/main/xbox-name.png">
                 <img width="140px" src="images/main/xbox.png">
             </a>
-            <a id="n64" class="console-option hvr-curl-top-right" href="handheld">
+            <a id="n64" class="console-option hvr-curl-bottom-right" href="handheld">
                 <img width="175px" class="mb-4" src="images/main/gameboy-name.png">
                 <img width="140px" src="images/main/gameboy.png">
             </a>
         </div>
-        <div class="col-8">
+        <div class="col-8 pt">
                 <div class="jumbotron">
                     <div>
                         <img width="175px" src="images/main/gameboy-name.png">
@@ -74,11 +66,11 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">The final goal is to reach the
-                                "Ultimate Challenge", an endless race filled with surprises, where the player must simply get
-                                as far as possible in the allotted time. Markers on the Ultimate Challenge course show the
-                                names of the five players who have traveled the farthest, who are tracked independently of
-                                the game's traditional high score table.Twin triggers fire laser cannons mounted atop the craft,
-                                and the Start buttons double as the triggers for the Shockwave "smart bomb" weapon.</textarea>
+"Ultimate Challenge", an endless race filled with surprises, where the player must simply get
+as far as possible in the allotted time. Markers on the Ultimate Challenge course show the
+names of the five players who have traveled the farthest, who are tracked independently of
+the game's traditional high score table.Twin triggers fire laser cannons mounted atop the craft,
+and the Start buttons double as the triggers for the Shockwave "smart bomb" weapon.</textarea>
                                 <p class="text-white">Release Date(s): NA September 1989, EU November 1989, Japan 1989</p>
                             </div>
                         </div>
@@ -88,15 +80,16 @@
                     <div class="flip-card mx-1">
                         <div class="flip-card-inner" onclick="handleflip(this)">
                             <div class="flip-card-front">
-                                <img src="images/loz_cover.jpg" class="card-img-top" alt="Legend of Zelda: A Link to the Past">
+                                <img src="images/AtariLynxRoadBlasters.jpg" class="card-img-top" alt="Legend of Zelda: A Link to the Past">
                                 <h5 class="card-title">Atari Lynx Road Blasters</h5>
                             </div>
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">Objective: race that red beast
-                                of a vehicle and don’t run out of fuel. That’s it! Simple? Nope. 50 tracks. Enemy cars.
-                                Tight twists and turns. No passwords. It’s an arcade challenge alright, and the Lynx does
-                                well to capture the intensity of the original. Once you’re out of fuel, you lose! </textarea>
+of a vehicle and don’t run out of fuel. That’s it! Simple? Nope. 50 tracks. Enemy cars.
+Tight twists and turns. No passwords. It’s an arcade challenge alright, and the Lynx does
+well to capture the intensity of the original. Once you’re out of fuel, you lose!
+ </textarea>
                                 <p class="text-white">Release Date(s): June 1987</p>
                             </div>
                         </div>
@@ -112,15 +105,15 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">The player begins in their
-                                    hometown of Pallet Town. After venturing alone into the tall grass, the player is
-                                    stopped by Professor Oak, a famous Pokémon researcher. Professor Oak explains to the
-                                    player that wild Pokémon may be living there and encountering them alone can be very
-                                    dangerous. He takes the player to his laboratory where the player meets Oak's grandson,
-                                    a rival aspiring Pokémon Trainer. The player and the rival are both instructed to select
-                                    a starter Pokémon for their travels out of Bulbasaur, Squirtle and Charmander.
-                                    Oak's Grandson will always choose the Pokémon which is stronger against the player's
-                                    starting Pokémon. He will then challenge the player to a Pokémon battle with their newly
-                                    obtained Pokémon and will continue to battle the player at certain points throughout the games.</textarea>
+hometown of Pallet Town. After venturing alone into the tall grass, the player is
+stopped by Professor Oak, a famous Pokémon researcher. Professor Oak explains to the
+player that wild Pokémon may be living there and encountering them alone can be very
+dangerous. He takes the player to his laboratory where the player meets Oak's grandson,
+a rival aspiring Pokémon Trainer. The player and the rival are both instructed to select
+a starter Pokémon for their travels out of Bulbasaur, Squirtle and Charmander.
+Oak's Grandson will always choose the Pokémon which is stronger against the player's
+starting Pokémon. He will then challenge the player to a Pokémon battle with their newly
+obtained Pokémon and will continue to battle the player at certain points throughout the games.</textarea>
                                 <p class="text-white">Release Date(s): NA September 1998, EU October 1998, Japan October 1996</p>
                             </div>
                         </div>
@@ -130,19 +123,19 @@
                     <div class="flip-card mx-1 mt-1">
                         <div class="flip-card-inner" onclick="handleflip(this)">
                             <div class="flip-card-front">
-                                <img src="images/loz_cover.jpg" class="card-img-top" alt="Legend of Zelda: Link's Awakening">
+                                <img src="images/LoZGB.jpg" class="card-img-top" alt="Legend of Zelda: Link's Awakening">
                                 <h5 class="card-title">Game Boy Legend of Zelda: Link's Awakening</h5>
                             </div>
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">After the events of A Link to the Past,
-                                    the hero Link travels by ship to other countries to train for further threats. A storm
-                                    destroys his boat at sea, and he washes ashore on Koholint Island,[19] where he is taken to
-                                    the house of Tarin by his daughter Marin. She is fascinated by Link and the outside world,
-                                    and tells Link wishfully that, if she were a seagull, she would leave and travel across the sea.
-                                    After Link recovers his sword, a mysterious owl tells him that he must wake the Wind Fish,
-                                    Koholint's guardian, in order to return home. The Wind Fish lies dreaming in a giant egg on top
-                                    of Mt. Tamaranch, and can only be awakened by the eight Instruments of the Sirens</textarea>
+the hero Link travels by ship to other countries to train for further threats. A storm
+destroys his boat at sea, and he washes ashore on Koholint Island,[19] where he is taken to
+the house of Tarin by his daughter Marin. She is fascinated by Link and the outside world,
+and tells Link wishfully that, if she were a seagull, she would leave and travel across the sea.
+After Link recovers his sword, a mysterious owl tells him that he must wake the Wind Fish,
+Koholint's guardian, in order to return home. The Wind Fish lies dreaming in a giant egg on top
+of Mt. Tamaranch, and can only be awakened by the eight Instruments of the Sirens</textarea>
                                 <p class="text-white">Release Date(s): NA August 1993, EU December 1993, Japan 1993</p>
                             </div>
                         </div>
@@ -158,14 +151,14 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">As with the previous games in
-                                    the God of War franchise, God of War: Chains of Olympus is set in an alternate version of
-                                    ancient Greece, populated by the Olympian Gods, Titans, and other beings of Greek mythology.
-                                    With the exception of flashbacks, the events are set between those of the games Ascension (2013)
-                                    and God of War (2005). Several locations are explored, including the real world locations of
-                                    the ancient cities of Attica and Marathon, the latter including fictional settings of the
-                                    Temple of Helios and the Caves of Olympus, and several other fictional locations, including
-                                    the Underworld, which features scenes at the River Styx, Tartarus, the Fields of Elysium,
-                                    and the Temple of Persephone. </textarea>
+the God of War franchise, God of War: Chains of Olympus is set in an alternate version of
+ancient Greece, populated by the Olympian Gods, Titans, and other beings of Greek mythology.
+With the exception of flashbacks, the events are set between those of the games Ascension (2013)
+and God of War (2005). Several locations are explored, including the real world locations of
+the ancient cities of Attica and Marathon, the latter including fictional settings of the
+Temple of Helios and the Caves of Olympus, and several other fictional locations, including
+the Underworld, which features scenes at the River Styx, Tartarus, the Fields of Elysium,
+and the Temple of Persephone.</textarea>
                                 <p class="text-white">Release Date(s): NA August 1993, EU December 1993, Japan 1993</p>
                             </div>
                         </div>
@@ -181,9 +174,9 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">Enter a time where the land Ivalice
-                                    has been divided by the War of the Lions. Play as either Delital Heiral, the hero who stopped
-                                    the war, or Ramza Beoulve, whose role remains a mystery. These two characters help you
-                                    to unlock and discover the history of the war and Ivalice.</textarea>
+has been divided by the War of the Lions. Play as either Delital Heiral, the hero who stopped
+the war, or Ramza Beoulve, whose role remains a mystery. These two characters help you
+to unlock and discover the history of the war and Ivalice.</textarea>
                                 <p class="text-white">Release Date(s): May 2007</p>
                             </div>
                         </div>
@@ -199,9 +192,9 @@
                             <div class="flip-card-back">
                                 <label>Description</label>
                                 <textarea disabled class="form-control" style="resize: none" rows="5">The Legacy Virus is annihilating
-                                    mutantkind and the Gamesmaster is holding the key. He offers the X-Men a chance to play
-                                    his game and win the secret, but he also offers the same to their arch-enemies with the added
-                                    satisfaction of destroying the X-Men. The X-Men must split up to find the cure or perish forever. </textarea>
+mutantkind and the Gamesmaster is holding the key. He offers the X-Men a chance to play
+his game and win the secret, but he also offers the same to their arch-enemies with the added
+satisfaction of destroying the X-Men. The X-Men must split up to find the cure or perish forever.</textarea>
                                 <p class="text-white">Release Date(s): NA February 1995 EU 1995</p>
                             </div>
                         </div>
