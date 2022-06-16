@@ -5,6 +5,7 @@
     <title>Profile Summary</title>
 
     <!--CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
@@ -31,39 +32,50 @@
         </div>
     </form>
 </nav>
-
-<div class="row">
-    <div class="col-6">
-        <div class="col-md-12">
-            <table>
-                <tr>
-                    <td class="py-2">Name:{{@SESSION.member->getFirstname()}} {{@SESSION.member->getLastname()}}</td>
-                </tr>
-
-                <tr>
-                    <td class="py-2">Username: {{@SESSION.member->getUsername()}} </td>
-                </tr>
-
-                <tr>
-                    <td class="py-2">Email: {{@SESSION.member->getEmail()}}</td>
-                </tr>
-
-                <tr>
-                    <td class="py-2">Consoles: {{ implode(", ", @SESSION.member->getConsole()) }}</td>
-                </tr>
-                <tr>
-                    <td class="py-2">Age: {{@SESSION.member->getAge()}}</td>
-                </tr>
-                <tr>
-                    <td class="py-2">Gamertags: {{ implode(", ", @SESSION.member->getGamertags()) }}</td>
-                </tr>
-
-            </table>
+<div class="container-fluid">
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Name: {{@SESSION.member->getFirstname()}} {{@SESSION.member->getLastname()}}</li>
+                            <li class="list-group-item">Username: {{@SESSION.member->getUsername()}}</li>
+                            <li class="list-group-item">Age: {{@SESSION.member->getAge()}}</li>
+                            <li class="list-group-item">Email: {{@SESSION.member->getEmail()}}</li>
+                            <li class="list-group-item">Consoles: {{ implode(", ", @SESSION.member->getConsole()) }}</li>
+                            <check if="{{ get_class(@SESSION.member) == 'vip'}}">
+                                <li class="list-group-item">Gamertags: {{ implode(", ", @SESSION.member->getGamertags()) }}</li>
+                            </check>
+                            <div class="p-2 border rounded-bottom">
+                                <check if="{{ get_class(@SESSION.member) == 'vip'}}">
+                                    <form action="Upload" method="post" enctype="multipart/form-data">
+                                        Select image to upload:
+                                        <input type="file" name="fileToUpload" id="fileToUpload"><br>
+                                        <input type="submit" class="btn btn-primary mt-3" name="submit">
+                                    </form>
+                                </check>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row justify-content-center">
+                        <check if="{{ get_class(@SESSION.member) == 'member' }}">
+                            <img src="images/avatar.png" id="avatar" class="rounded float-right" alt="avatar">
+                        </check>
+                        <check if="{{ get_class(@SESSION.member) == 'vip' }}">
+                            <img src="{{@SESSION.member->getPhoto()}}" id="premPic" class="rounded float-right" alt="avatar">
+                        </check>
+                    </div>
+                    <div class="row">
+                        <p>{{@bio}}</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-
-
+</div>
 
 </body>
 </html>

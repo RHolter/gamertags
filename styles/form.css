@@ -5,3 +5,8 @@ body {
 .err {
     color: red;
 }
+
+#premPic {
+    height: 585px;
+    width: 585px;
+}

@@ -5,7 +5,7 @@ class vip extends member {
   private $_gamertags = [];
   private $_photo = '';
 
-  private $_uri = 'https://lzyfuentes.greenriverdev.com/328/dating/';
+  private $_uri = 'https://lzyfuentes.greenriverdev.com/328/gamertags/';
 
   public function __construct($gamertags) {
     $this->_gamertags = $gamertags;

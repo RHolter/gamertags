@@ -40,119 +40,95 @@
 <!--Body-->
 <div class="jumbotron">
     <h1 class="display-4">Create a G@mer Profile!</h1>
-    <p class="lead text-white">Welcome to G@mer T@gs. </p>
+    <p class="lead">Welcome to G@mer T@gs. </p>
     <hr class="my-4">
-    <p class="text-white">Let's get started! </p>
+    <p class="">Let's get started! </p>
     <p class="lead"></p>
 </div>
 <!--Add in the User info -->
 <!--redefine the form action and such for validation -->
-<form action="profile" method="POST">
-
-    <!--First name-->
-    <div class="form-row text">
-        <div class="col-md-4 mt-3 mb-3">
-            <label for="firstname" class="">First Name</label>
-            <input type="text" class="form-control" id="firstname" name="firstname" value="{{ @firstname }}" placeholder="First Name">
+<div class="container-fluid">
+<div class="card">
+    <div class="card-body">
+        <h1>Profile Information</h1>
+        <hr class="divider">
+        <form action="profile" method="post">
+            <label for="firstname"><b>First Name</b></label>
+            <input type="text" class="form-control mb-3" id="firstname" name="firstname" value="{{ @firstname }}" placeholder="First Name">
             <check if="{{ isset(@errors['firstname']) }}">
                 <span class="err">{{ @errors['firstname'] }}</span>
             </check>
-        </div>
-        <!--Last name-->
-        <div class="col-md-4 mt-3 mb-3">
-            <label for="lastname" class="">Last Name</label>
-            <input type="text" class="form-control" id="lastname" name="lastname" value="{{ @lastname }}" placeholder="Last Name">
+            <label for="lastname"><b>Last Name</b></label>
+            <input type="text" class="form-control mb-3" id="lastname" name="lastname" value="{{ @lastname }}" placeholder="Last Name">
             <check if="{{ isset(@errors['lastname']) }}">
                 <span class="err">{{ @errors['lastname'] }}</span>
             </check>
-        </div>
-    </div>
-    <!--User name-->
-    <div class="form-row">
-        <div class="col-md-4 mt-3 mb-3">
-            <label for="username" class="">User Name</label>
-            <input type="text" class="form-control" id="username" name="username" value="{{ @username }}" placeholder="User Name">
+            <label for="username" class="mt-2"><b>User Name</b></label>
+            <input type="text" class="form-control" id="username" name="username" value="{{ @username }}" placeholder="User name">
             <check if="{{ isset(@errors['username']) }}">
                 <span class="err">{{ @errors['username'] }}</span>
             </check>
-        </div>
-        <!--Password-->
-        <div class="col-md-4 mt-3 mb-3">
-            <label for="password" class="">Password</label>
-            <input type="text" class="form-control" id="password" name="password" value="{{ @password }}" placeholder="Password">
+            <label for="username" class="mt-2"><b>Password</b></label>
+            <input type="password" class="form-control" id="password" name="password" value="{{ @password }}" placeholder="Password">
             <check if="{{ isset(@errors['password']) }}">
                 <span class="err">{{ @errors['password'] }}</span>
             </check>
-        </div>
-    </div>
-
-    <!--Email-->
-    <div class="form-row">
-        <div class="col-md-4 mt-3 mb-3">
-            <label for="email" class="">Email</label>
-            <input type="email" class="form-control" id="email" name="email" value="{{ @email }}" placeholder="Email">
+            <label for="username" class="mt-2"><b>Email</b></label>
+            <input type="text" class="form-control" id="email" name="email" value="{{ @email }}" placeholder="Email">
             <check if="{{ isset(@errors['email']) }}">
                 <span class="err">{{ @errors['email'] }}</span>
             </check>
-        </div>
-        <div class="col-md-4 mt-3 mb-3">
-            <label for="age" class="">Age</label>
-            <input type="text" class="form-control" id="age" name="age" value="{{ @age }}" placeholder="Age">
+            <label for="age"><b>Age</b></label>
+            <input type="text" class="form-control mb-3" id="age" name="age" value="{{ @age }}" placeholder="Age">
             <check if="{{ isset(@errors['age']) }}">
                 <span class="err">{{ @errors['age'] }}</span>
             </check>
-        </div>
+            <label class="my-3 mr-1"><b>Consoles</b></label><br>
+            <div class="form-check form-check-inline my-3">
+                <input class="form-check-input" type="checkbox" id="segaSaturn" name="console[]" value="sega saturn">
+                <label class="form-check-label" for="segaSaturn">Sega Saturn</label>
+            </div>
+            <div class="form-check form-check-inline my-3">
+                <input class="form-check-input" type="checkbox" id="playStation2" name="console[]" value="playStation 2">
+                <label class="form-check-label" for="playStation2">PlayStation 2</label>
+            </div>
+            <div class="form-check form-check-inline my-3">
+                <input class="form-check-input" type="checkbox" id="nintendo64" name="console[]" value="nintendo 64">
+                <label class="form-check-label" for="nintendo64">Nintendo 64</label>
+            </div>
+            <div class="form-check form-check-inline my-3">
+                <input class="form-check-input" type="checkbox" id="amigaCD32" name="console[]" value="amiga cd32">
+                <label class="form-check-label" for="amigaCD32">Amiga CD32</label>
+            </div>
+            <div class="form-check form-check-inline my-3">
+                <input class="form-check-input" type="checkbox" id="atariJag" name="console[]" value="atari jaguar">
+                <label class="form-check-label" for="atariJag">Atari Jaguar</label>
+            </div>
+            <div class="form-check form-check-inline my-3">
+                <input class="form-check-input" type="checkbox" id="sega32x" name="console[]" value="sega 32x">
+                <label class="form-check-label" for="sega32x">Sega 32x</label>
+            </div>
+            <div class="form-check form-check-inline my-3">
+                <input class="form-check-input" type="checkbox" id="nec" name="console[]" value="turbografx-16">
+                <label class="form-check-label" for="nec">NEC TurboGrafx-16</label>
+            </div>
+            <div class="form-check form-check-inline my-3">
+                <input class="form-check-input" type="checkbox" id="snes" name="console[]" value="snes">
+                <label class="form-check-label" for="snes">Super Nintendo</label>
+            </div>
+            <div class="form-group mt-2">
+                <label class="mt-2"><b>Premium Membership</b></label>
+                <label class="form-check-label d-block ml-4">
+                    <input type="checkbox" name="vip" class="form-check-input" value="vip">
+                    Sign me up for a Premium Account!</label>
+            </div>
+            <div class="d-flex float-right my-3">
+                <button class="btn btn-primary" role="button">Next ></button>
+            </div>
+        </form>
     </div>
-    <hr>
-    <!--Consoles-->
-    <legend class="text-white">Consoles</legend>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" value="sega saturn" name="console[]" id="segaSaturn">
-        <label class="form-check-label" for="segaSaturn" >Sega Saturn</label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" value="playstation 2" name="console[]" id="playStation2">
-        <label class="form-check-label" for="playStation2">PlayStation 2 </label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" value="nintendo 64" name="console[]" id="nintendo64">
-        <label class="form-check-label" for="nintendo64">Nintendo 64 </label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" value="amiga cd32" name="console[]" id="amigaCD32">
-        <label class="form-check-label" for="amigaCD32">Amiga CD32 </label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" value="atari jaguar" name="console[]" id="atariJag">
-        <label class="form-check-label" for="atariJag">Atari Jaguar </label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" value="sega 32x" name="console[]" id="sega32x">
-        <label class="form-check-label" for="sega32x">Sega 32X </label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" value="turbografx-16" name="console[]" id="nec">
-        <label class="form-check-label" for="nec">NEC TurboGrafx-16 </label>
-    </div>
-    <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" value="snes" name="console[]" id="snes">
-        <label class="form-check-label" for="snes">SNES</label>
-    </div>
-    <check if="{{ isset(@errors['console']) }}">
-        <span class="err">{{ @errors['console'] }}</span>
-    </check>
-
-    <!--Button-->
-    <button class="btn btn-primary" role="button">Next ></button>
-
-    <!--VIP account button-->
-    <div>
-        <label class="form-check-label text-white" for="membership">
-            <input value="vip" id="membership" type="checkbox" name="vip">Sign me up for a VIP account!</input>
-        </label>
-    </div>
-</form>
-
+</div>
+</div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

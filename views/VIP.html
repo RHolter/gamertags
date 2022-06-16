@@ -49,43 +49,29 @@
 
 <!--Add in the User info -->
 <!--redefine the form action and such for validation -->
-<form action="VIP" method="post">
+<div class="container-fluid">
+    <div class="card">
+        <div class="card-body">
+            <h1>Profile Information</h1>
+            <hr class="divider">
+            <form action="VIP" method="post">
+                <label for="steamid"><b>Steam ID</b></label>
+                <input type="text" class="form-control mb-3" id="steamid" name="gamertags[]" placeholder="Steam ID">
 
-    <!--Steam-->
-    <div class="form-row text">
-        <div class="col-md-4 mt-3 mb-3">
-            <label for="steamid" class="text-white">Steam ID</label>
-            <input type="text" class="form-control" id="steamid" name="gamertags[]" placeholder="Steam ID">
+                <label for="xboxTag"><b>Xbox Gametag</b></label>
+                <input type="text" class="form-control mb-3" id="xboxTag" name="gamertags[]" placeholder="Xbox Gametag">
 
-        </div>
-        <!--Xbox-->
-        <div class="col-md-4 mt-3 mb-3">
-            <label for="xboxTag" class="text-white">Xbox Gamertag</label>
-            <input type="text" class="form-control" id="xboxTag" name="gamertags[]" placeholder="Xbox Gamertag">
+                <label for="psn" class="mt-1"><b>PSN</b></label>
+                <input type="text" class="form-control mb-3" id="psn" name="gamertags[]" placeholder="PlayStation Network ID">
 
-        </div>
-    </div>
-    <!--PlayStation-->
-    <div class="form-row">
-        <div class="col-md-4 mt-3 mb-3">
-            <label for="psn" class="text-white">PSN</label>
-            <input type="text" class="form-control" id="psn" name="gamertags[]" placeholder="PSN">
+                <label for="friendcode" class="mt-1"><b>Nintendo Friend Code</b></label>
+                <input type="text" class="form-control mb-3" id="friendcode" name="gamertags[]" placeholder="Nintendo Friend Code">
 
-        </div>
-        <!--Nientendo-->
-        <div class="col-md-4 mt-3 mb-3">
-            <label for="friendcode" class="text-white">Friend code</label>
-            <input type="text" class="form-control" id="friendcode" name="gamertags[]" placeholder="Friend code">
-
+                <button class="btn btn-primary" role="button">Next ></button>
+            </form>
         </div>
     </div>
-
-    <hr>
-    <!--Button-->
-    <button class="btn btn-primary" role="button">Next ></button>
-</form>
-
-
+</div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
