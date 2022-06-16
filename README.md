@@ -20,7 +20,7 @@ Gurnek Leo and Renee
 •	Database layer uses PDO and prepared statements to add and retrieve from the database.
 
 5. Has a history of commits from both team members to a Git repository. Commits are clearly commented.
-•	Each teammate has over 30 commits, clearly commented.
+•	Each teammate has over 20 commits, clearly commented.
 
 6. Uses OOP, and defines multiple classes, including at least one inheritance relationship.
 •	2 classes. Member and VIP Member contains all fields such as name, email, username, age, and password. VIP extends Member and contains all fields from user and the VIP is able to enter in gamer tags from the consoles
