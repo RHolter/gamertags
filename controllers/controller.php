@@ -92,24 +92,23 @@ class Controller
           $this->_f3->set('console', DataLayer::getConsoles());
 
           // Consoles
-          if (!Validator::validConsoles($_POST['console'])) {
-
-            // Error message
-            $this->_f3->set('errors["console"]', 'An invalid outdoor interest was detected.');
-          } else {
+          if (Validator::validConsoles($_POST['console'])) {
 
             if (!empty($_POST['console'])) {
 
               // Setting session variable
               $console = $_POST['console'];
-            } else {
 
-              // Setting to 'None' if no indoor interests were selected
+          } else if (!Validator::validConsoles($_POST['console'])) {
+
+              // Setting to 'None'
               $console = array("None");
+
             }
-            // Setting member attribute and putting in the hive
-            $this->_f3->set('console', $console);
           }
+
+          // Setting member attribute and putting in the hive
+          $this->_f3->set('console', $console);
 
           // Creating member object
           if (isset($_POST['vip'])) {
@@ -150,7 +149,7 @@ class Controller
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
       // Indoor interests
-      if (!Validator::validConsoles($_POST['gamertags'])) {
+      if (!Validator::validGamertags($_POST['gamertags'])) {
 
         // Error message
         $this->_f3->set('errors["gamertags"]', 'An console was detected.');
@@ -159,11 +158,11 @@ class Controller
         if (!empty($_POST['gamertags'])) {
 
           // Setting session variable
-          $console = $_POST['gamertags'];
+          $gamertags = $_POST['gamertags'];
         } else {
 
           // Setting to 'None' if no indoor interests were selected
-          $console = array("None");
+          $gamertags = array("None");
         }
         // Setting member attribute and putting in the hive
         $_SESSION['member']->setGamertags($gamertags);

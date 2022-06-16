@@ -88,7 +88,14 @@ class Validator
   static function validConsoles($console)
   {
 
-    return count(array_intersect(Datalayer::getConsoles(), $console)) > 0;
+    return $console;
+
+  }
+
+  static function validGamertags($gamertags)
+  {
+
+    return $gamertags;
 
   }
 }

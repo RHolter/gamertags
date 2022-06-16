@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/form.css">
 
     <title>VIP page</title>
 </head>
@@ -49,40 +49,40 @@
 
 <!--Add in the User info -->
 <!--redefine the form action and such for validation -->
-<form>
+<form action="VIP" method="post">
 
     <!--Steam-->
     <div class="form-row text">
         <div class="col-md-4 mt-3 mb-3">
-            <label for="fName" class="text-white">Steam ID</label>
-            <input type="text" class="form-control" id="fname" placeholder="Steam ID">
+            <label for="steamid" class="text-white">Steam ID</label>
+            <input type="text" class="form-control" id="steamid" name="gamertags[]" placeholder="Steam ID">
 
         </div>
         <!--Xbox-->
         <div class="col-md-4 mt-3 mb-3">
-            <label for="lname" class="text-white">Xbox Gamertag</label>
-            <input type="text" class="form-control" id="lname" placeholder="Xbox Gamertag">
+            <label for="xboxTag" class="text-white">Xbox Gamertag</label>
+            <input type="text" class="form-control" id="xboxTag" name="gamertags[]" placeholder="Xbox Gamertag">
 
         </div>
     </div>
     <!--PlayStation-->
     <div class="form-row">
         <div class="col-md-4 mt-3 mb-3">
-            <label for="uname" class="text-white">PSN</label>
-            <input type="text" class="form-control" id="uname" placeholder="PSN">
+            <label for="psn" class="text-white">PSN</label>
+            <input type="text" class="form-control" id="psn" name="gamertags[]" placeholder="PSN">
 
         </div>
         <!--Nientendo-->
         <div class="col-md-4 mt-3 mb-3">
-            <label for="password" class="text-white">Friend code</label>
-            <input type="text" class="form-control" id="password" placeholder="Friend code">
+            <label for="friendcode" class="text-white">Friend code</label>
+            <input type="text" class="form-control" id="friendcode" name="gamertags[]" placeholder="Friend code">
 
         </div>
     </div>
 
     <hr>
     <!--Button-->
-    <button type="submit" class="btn btn-primary">Sign up for VIP</button>
+    <button class="btn btn-primary" role="button">Next ></button>
 </form>
 
 

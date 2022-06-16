@@ -55,7 +55,7 @@
                     <td class="py-2">Age: {{@SESSION.member->getAge()}}</td>
                 </tr>
                 <tr>
-                    <td class="py-2">Gamertags: {{@SESSION.member->getGamertags()}}</td>
+                    <td class="py-2">Gamertags: {{ implode(", ", @SESSION.member->getGamertags()) }}</td>
                 </tr>
 
             </table>
