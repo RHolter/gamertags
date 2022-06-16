@@ -41,6 +41,10 @@ $f3->route('GET|POST /upload', function () {
   $GLOBALS['con']->Upload();
 });
 
+$f3->route('GET /about', function (){
+  $view = new Template();
+  echo $view-> render('views/about.html');
+});
 // sega saturn games
 $f3->route('GET /segasaturn', function (){
     $view = new Template();

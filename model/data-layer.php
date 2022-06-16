@@ -17,7 +17,7 @@ class DataLayer {
 
   static function getConsoles() {
 
-    return array("sega saturn", "playstation 2", "nintendo 64", "amiga cd32", "atari jaguar", "sega 32x", "turbografx-16", "snes");
+    return array("Sega Saturn", "PlayStation 2", "PlayStation", "Xbox", "GameBoy", "Sega 32x", "Nintendo", "Super Nintendo");
   }
 }
 
