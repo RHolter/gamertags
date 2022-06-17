@@ -14,15 +14,15 @@ for users.  At present, the Premium member is able to track four differnt gamer 
 <hr>
 <h3>Project Requirements</h3>
     <ol>
-    <li>1. Uses the MVC pattern</li>
-        <ol>
-        <li>Validation and Data Layer are under the model file</li>
-        <li>All HTML files are under views folder</li>
-        <li>Routes to all the html files under the index.php</li>
-        <li>Classes are under classes folder</li>
-        <li>JavaScripts are under the js folder</li>
-        </ol>
-    <li>2. Routes all URLs and leverages a templating language using Fat-Free Framework</li>
+    <li> Uses the MVC pattern</li>
+        <dl>
+        <dt>Validation and Data Layer are under the model file</dt>
+        <dt>All HTML files are under views folder</dt>
+        <dt>Routes to all the html files under the index.php</dt>
+        <dt>Classes are under classes folder</dt>
+        <dt>JavaScripts are under the js folder</dt>
+        </dl>
+    <li> Routes all URLs and leverages a templating language using Fat-Free Framework</li>
         <ol>
         <li>All routes are in the index.php and uses a Fat-Free language using FF3</li>
         </ol>
