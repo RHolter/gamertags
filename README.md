@@ -1,4 +1,5 @@
 # gamertags
+<h2>Team 404 Not Found</h2>
 <h3>G@mer T@gs</h3>
 <hr>
 <p>This project will be a database for Retro video games we all played once upon a time.</p>
@@ -49,5 +50,5 @@ for users.  At present, the Premium member is able to track four differnt gamer 
         <dl>Our project does not incorporate Ajax.</dl>
 </ol>
 <hr>
-
+<img src="images/UML.png">
   
