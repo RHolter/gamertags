@@ -9,6 +9,7 @@ Gurnek Leo and Renee
 •	Index.php calls function in Controller to get data from model and return views.
 •	Classes under classes folder
 •	JavaScripts under scripts
+<hr>
 
 2. Routes all URLs and leverages a templating language using Fat-Free framework
 •	All routes are in the index.php and leverages a templating language using Fat-Free Framework
