@@ -48,4 +48,6 @@ for users.  At present, the Premium member is able to track four differnt gamer 
     <li>BONUS: Incorporates Ajax that access data from a JSON file, PHP script, or API.</li>
         <dl>Our project does not incorporate Ajax.</dl>
 </ol>
+<hr>
+
   
