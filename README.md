@@ -1,15 +1,18 @@
 # gamertags
-final project for 328
-Gurnek Leo and Renee
-
-1. Separates all database/business logic using the MVC pattern.
-•	Validation and Data Layer are under the model folder
-•	All HTML files under views folder
-•	Routes to all the html files under the index.php
-•	Index.php calls function in Controller to get data from model and return views.
-•	Classes under classes folder
-•	JavaScripts under scripts
+<h3>G@mer T@gs</h3>
 <hr>
+<p>This project will be a database for Retro video games we all played once upon a time.</p>
+<p>A User will be able to log in and create an account to track the gamer tags (user names)
+for users.  At present, the Premium member is able to track four differnt gamer tags and add an avatar.</p>
+<hr>
+<h3>Authors</h3>
+<ol>
+    <li>Gurnek - Co-Founder/Developer/Supreme Leader of the X-Box Realm</li>
+    <li>Leonzyo - Co-Founder/Developer/Heavy Lifter of Cars</li>
+    <li>Renee - Co-Founder/Developer/Keeper of the Flame of Final Fantasy</li>
+</ol>
+<hr>
+
 
 2. Routes all URLs and leverages a templating language using Fat-Free framework
 •	All routes are in the index.php and leverages a templating language using Fat-Free Framework
