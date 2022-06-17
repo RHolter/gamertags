@@ -1,6 +1,6 @@
 # gamertags
-        <h2>Team 404 Not Found</h2>
-        <h3>G@mer T@gs</h3>
+Team 404 Not Found
+<h3>G@mer T@gs</h3>
 <hr>
 <p>This project will be a database for Retro video games we all played once upon a time.</p>
 <p>A User will be able to log in and create an account to track the gamer tags (user names)
