@@ -13,7 +13,7 @@ class vip extends member
 
   /**
    * construct the vip portion of the member
-   * @param $gamertags
+   * @param $gamertags gamer tags for user
    */
   public function __construct($gamertags)
   {
