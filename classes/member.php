@@ -16,13 +16,13 @@ class member
 
   /**
    * takes in parameters to create the member object
-   * @param $firstname
-   * @param $lastname
-   * @param $username
-   * @param $age
-   * @param $email
-   * @param $console
-   * @param $password
+   * @param $firstname first name of user
+   * @param $lastname last name of user
+   * @param $username username for user
+   * @param $age age of user
+   * @param $email email of user
+   * @param $console list of consoles user has
+   * @param $password password for user
    */
   public function __construct($firstname, $lastname, $username, $age, $email, $console, $password)
   {
