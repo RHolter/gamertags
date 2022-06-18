@@ -1,21 +1,39 @@
 <?php
 
+/**
+ * The Controller handles the rendering of view pages and processing of view
+ * page-server interactions.
+ */
 class Controller
 {
     private $_f3;
 
-    function __construct($f3)
+  /**
+   * Constructor for the Controller. Instantiates the Fat-Free hive.
+   * @param $f3 Fat-Free Templating object
+   */
+  function __construct($f3)
     {
         $this->_f3 = $f3;
     }
 
+  /**
+   * Method to load home view
+   * @return void
+   */
     function home()
     {
         $view = new Template();
         echo $view->render('views/home.html');
     }
 
-    function profile() {
+  /**
+   * Method to render the profile. Takes in user inputs, checks
+   * validation and stores the user data.
+   * @return void
+   */
+    function profile()
+    {
         //If the form has been submitted
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
@@ -142,6 +160,10 @@ class Controller
       echo $view->render('views/profile.html');
     }
 
+  /**
+   * Method to load vip page if vip membership checkbox is checked
+   * @return void
+   */
   function VIP()
   {
 
@@ -179,7 +201,7 @@ class Controller
   }
 
   /**
-   * Renders the profile summary
+   * Method to load account summary view
    * @return void
    */
   function Summary()
@@ -188,6 +210,10 @@ class Controller
     echo $view->render('views/summary.html');
   }
 
+  /**
+   * Method to upload a avatar image for vip users on the summary page
+   * @return void
+   */
   function Upload()
   {
     $target_dir = "uploads/";

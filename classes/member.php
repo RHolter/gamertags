@@ -1,6 +1,10 @@
 <?php
 
-class member {
+/**
+ * member class that represents users
+ */
+class member
+{
 
   private $_firstname;
   private $_lastname;
@@ -10,7 +14,18 @@ class member {
   private $_age;
   private $_password;
 
-  public function __construct($firstname, $lastname, $username, $age, $email, $console, $password) {
+  /**
+   * takes in parameters to create the member object
+   * @param $firstname
+   * @param $lastname
+   * @param $username
+   * @param $age
+   * @param $email
+   * @param $console
+   * @param $password
+   */
+  public function __construct($firstname, $lastname, $username, $age, $email, $console, $password)
+  {
 
     $this->_firstname = $firstname;
     $this->_lastname = $lastname;
@@ -22,110 +37,141 @@ class member {
   }
 
   /**
-   * @return string
+   * Method to return $_firstname variable
+   * @return mixed first name, null if unset
    */
-  public function getFirstname() {
+  public function getFirstname()
+  {
 
     return $this->_firstname;
   }
 
   /**
-   * @param string $fname
+   * Method to set the firstname in the session
+   * @param string sets firstname
    */
-  public function setFirstname($firstname) {
+  public function setFirstname($firstname)
+  {
 
     $this->_firstname = $firstname;
   }
 
   /**
-   * @return string
+   * Method to return $_lastname variable
+   * @return mixed last name, null if unset
    */
-  public function getLastname() {
+  public function getLastname()
+  {
 
     return $this->_lastname;
   }
 
   /**
-   * @param string $lname
+   * Method to set the lastname in the session
+   * @param string $lastname sets firstname
    */
-  public function setLastname($lastname) {
+  public function setLastname($lastname)
+  {
 
     $this->_lastname = $lastname;
   }
 
   /**
-   * @return int
+   * Method to return $_age variable
+   * @return int age, null if unset
    */
-  public function getAge() {
+  public function getAge()
+  {
 
     return $this->_age;
   }
 
   /**
-   * @param int $age
+   * Method to set the age in the session
+   * @param int $age sets age
    */
-  public function setAge($age) {
+  public function setAge($age)
+  {
 
     $this->_age = $age;
   }
 
   /**
-   * @return string
+   * Method to return $_username variable
+   * @return string username, null if unset
    */
-  public function getUsername() {
+  public function getUsername()
+  {
 
     return $this->_username;
   }
 
   /**
-   * @param string $gender
+   * Method to set the username in the session
+   * @param string $username sets username
    */
-  public function setUsername($username) {
+  public function setUsername($username)
+  {
 
     $this->_username = $username;
   }
 
   /**
-   * @return mixed
+   * Method to return $_email variable
+   * @return mixed email, null if unset
    */
-  public function getEmail() {
+  public function getEmail()
+  {
 
     return $this->_email;
   }
 
   /**
-   * @param mixed $email
+   * Method to set the email in the session
+   * @param mixed $email sets email
    */
-  public function setEmail($email) {
+  public function setEmail($email)
+  {
 
     $this->_email = $email;
   }
 
   /**
-   * @return mixed
+   * Method to return $_console variable
+   * @return mixed console, null if unset
    */
-  public function getConsole() {
+  public function getConsole()
+  {
 
     return $this->_console;
   }
 
   /**
-   * @param mixed $state
+   * Method to set the console in the session
+   * @param mixed $console sets console
    */
-  public function setConsole($console) {
+  public function setConsole($console)
+  {
 
     $this->_console = $console;
   }
 
-  public function getPassword() {
+  /**
+   * Method to return $_password variable
+   * @return mixed password, null if unset
+   */
+  public function getPassword()
+  {
 
     return $this->_password;
   }
 
   /**
-   * @param mixed $state
+   * Method to set the password in the session
+   * @param mixed $password sets password
    */
-  public function setPassword($password) {
+  public function setPassword($password)
+  {
 
     $this->_password = $password;
   }
